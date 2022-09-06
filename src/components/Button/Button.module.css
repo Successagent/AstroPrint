@@ -4,9 +4,12 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  padding: 10px;
+  padding: 6px;
   position: relative;
   overflow: hidden;
+}
+
+.fillFlex {
   align-self: flex-start;
 }
 
@@ -25,8 +28,12 @@
   z-index: 0;
   transform: translate(200%);
 }
-.button::before {
+
+.button p {
   transition: all 200ms;
+}
+.button::before {
+  animation: slideOut 200ms both;
 }
 .button:hover {
   color: #fff;
@@ -37,7 +44,12 @@
 
 .arrowContainer {
   padding: 4px;
+  height: 30px;
+  width: 30px;
   background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 @keyframes slideIn {
@@ -46,5 +58,13 @@
   }
   100% {
     transform: translate(100%);
+  }
+}
+@keyframes slideOut {
+  0% {
+    transform: translate(100%);
+  }
+  100% {
+    transform: translate(200%);
   }
 }

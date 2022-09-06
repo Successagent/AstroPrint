@@ -1,11 +1,15 @@
 import React, { useState } from "react";
 import ButtonStyles from "./Button.module.css";
 
-function Button({ children, className }) {
+function Button({ children, className, fillFlex }) {
   return (
-    <button className={`${ButtonStyles.button} ${className}`}>
+    <button
+      className={`${ButtonStyles.button} ${
+        fillFlex ? "" : ButtonStyles.fillFlex
+      } ${className}`}
+    >
       <p>{children}</p>
-      <div className={ButtonStyles.arrowContainer}></div>
+      <div className={ButtonStyles.arrowContainer}>z</div>
     </button>
   );
 }
