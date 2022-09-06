@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import HeaderStyles from "./header.module.css";
 import { Button, SmallButton } from "../Button";
 
@@ -8,9 +9,15 @@ function Header() {
       <div className={HeaderStyles.logo}>Astro</div>
 
       <ul className={HeaderStyles.links}>
-        <li>Home</li>
-        <li>About</li>
-        <li>Services</li>
+        <Link to={"/"}>
+          <li className={HeaderStyles.link}>Home</li>
+        </Link>
+        <Link to={"/about"}>
+          <li className={HeaderStyles.link}>About</li>
+        </Link>
+        <Link to={"/services"}>
+          <li className={HeaderStyles.link}>Services</li>
+        </Link>
       </ul>
 
       <div className={HeaderStyles.buttonSet}>
