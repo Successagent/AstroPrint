@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
-function TestimonialCard() {
-  return <div>TestimonialCard</div>;
+function MemberCard() {
+  return <div>MemberCard</div>;
 }
 
-export default TestimonialCard;
+export default MemberCard;

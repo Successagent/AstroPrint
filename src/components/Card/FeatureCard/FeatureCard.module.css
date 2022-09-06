@@ -1,0 +1,17 @@
+.container {
+  display: flex;
+  gap: 10px;
+}
+.icon {
+  --size: 60px;
+  height: var(--size);
+  width: var(--size);
+  background: #000;
+  border-radius: 99999px;
+}
+.text {
+}
+.title {
+}
+.body {
+}
