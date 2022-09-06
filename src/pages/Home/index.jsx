@@ -11,7 +11,7 @@ function Home() {
       <Header />
       <section className="hero">
         <div className="hero__text">
-          <h3 className="sect__sub_header">Welcome to AstroPrint</h3>
+          <h3 className="sect__sub_header">— Welcome to AstroPrint</h3>
           <h1>
             {" "}
             Modern

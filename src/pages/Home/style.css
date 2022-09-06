@@ -1,11 +1,24 @@
 .hero {
   display: flex;
-  min-height: 100vh;
+  min-height: 93vh;
+  background: #1a1e5d;
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .hero {
+    flex-direction: column-reverse;
+  }
 }
 
 .hero__text,
 .hero__img {
   flex: 1;
+}
+.hero__img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 .hero__text {
   text-align: left;
@@ -20,6 +33,7 @@
   font-size: 6rem;
   margin-top: 0.6em;
   font-family: var(--main-font);
+  color: #fff;
 }
 
 .hero__text button {
