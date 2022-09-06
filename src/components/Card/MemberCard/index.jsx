@@ -14,6 +14,20 @@ function MemberCard() {
             Sed ut perspiciatis unde omnis iste natus error sit voluptatem
             accusantium doloremque laudantium totam
           </p>
+          <div>
+            <div>
+              <i class="bdevs-btn-icon fab fa-facebook-f"></i>
+            </div>
+            <div>
+              <i class="bdevs-btn-icon fab fa-facebook-f"></i>
+            </div>
+            <div>
+              <i class="bdevs-btn-icon fab fa-facebook-f"></i>
+            </div>
+            <div>
+              <i class="bdevs-btn-icon fab fa-facebook-f"></i>
+            </div>
+          </div>
         </div>
         <div>
           <img src={AboutCardLogoTwo} alt="" />
