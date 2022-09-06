@@ -1,9 +1,10 @@
 import React, { useState } from "react";
-import HeaderStyles from "./styles.css";
+import HeaderStyles from "./header.module.css";
+import { Button, SmallButton } from "../Button";
 
 function Header() {
   return (
-    <header>
+    <header className={HeaderStyles.header}>
       <div className={HeaderStyles.logo}>Astro</div>
 
       <ul className={HeaderStyles.links}>
@@ -13,8 +14,8 @@ function Header() {
       </ul>
 
       <div className={HeaderStyles.buttonSet}>
-        <button>A</button>
-        <button>B</button>
+        <SmallButton>Q</SmallButton>
+        <Button>Get A Quote</Button>
       </div>
     </header>
   );

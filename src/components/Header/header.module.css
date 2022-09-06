@@ -1,12 +1,19 @@
-header {
+.header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 1em 2em;
+  box-shadow: 0 3px 0 #000;
 }
 
-header ul {
+.links {
   display: flex;
   align-items: center;
   gap: 1em;
   list-style: none;
+}
+
+.buttonSet {
+  display: flex;
+  gap: 10px;
 }

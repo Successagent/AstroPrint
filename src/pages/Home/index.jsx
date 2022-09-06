@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import "./style.css";
+import Button from "../../components/Button/index";
 
 function Home() {
   return (
@@ -11,6 +12,7 @@ function Home() {
         <div className="hero__text">
           <h3 className="sect__sub_header">Welcome to AstroPrint</h3>
           <h1> Modern Printing Agency</h1>
+          <Button>Discover More</Button>
         </div>
         <div className="hero__img">k</div>
       </section>
