@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import heroImg from "../../assets/hero_img.jpg";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import "./style.css";
@@ -11,10 +12,19 @@ function Home() {
       <section className="hero">
         <div className="hero__text">
           <h3 className="sect__sub_header">Welcome to AstroPrint</h3>
-          <h1> Modern Printing Agency</h1>
+          <h1>
+            {" "}
+            Modern
+            <br />
+            Printing
+            <br />
+            Agency
+          </h1>
           <Button>Discover More</Button>
         </div>
-        <div className="hero__img">k</div>
+        <div className="hero__img">
+          <img src={heroImg} alt="" />
+        </div>
       </section>
       <section>
         <h3 className="sect__sub_header">Our Core Features</h3>
