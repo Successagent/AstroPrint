@@ -1,18 +1,18 @@
 import React, { useState } from "react";
-import "./styles.css";
+import HeaderStyles from "./styles.css";
 
 function Header() {
   return (
     <header>
-      <div className="logo">Astro</div>
+      <div className={HeaderStyles.logo}>Astro</div>
 
-      <ul>
+      <ul className={HeaderStyles.links}>
         <li>Home</li>
         <li>About</li>
         <li>Services</li>
       </ul>
 
-      <div className="button_set">
+      <div className={HeaderStyles.buttonSet}>
         <button>A</button>
         <button>B</button>
       </div>

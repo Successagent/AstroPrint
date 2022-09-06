@@ -25,6 +25,16 @@
   --primary-blue: #353cc1;
   --primary-red: #fa0213;
   --secondary-blue: #4f56f7;
+  --main-font: "Rubik", sans-serif;
+}
+
+.sect__sub_header {
+  color: var(--primary-red);
+  font-family: "Pacifico", cursive;
+}
+
+.sect__header {
+  font-family: var(--main-font);
 }
 
 a {
