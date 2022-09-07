@@ -20,12 +20,9 @@ function Home() {
         <div className="hero__text">
           <h3 className="sect__sub_header">— Welcome to AstroPrint</h3>
           <h1>
-            {" "}
-            Modern
-            <br />
-            Printing
-            <br />
-            Agency
+            Modern <br />
+            Printing <br />
+            Agency{" "}
           </h1>
           <Button>Discover More</Button>
         </div>
@@ -154,15 +151,19 @@ function Home() {
       <section className="sect">
         <h3 className="sect__sub_header">Our Recent Works</h3>
         <h2 className="sect__header">Let's See our latest projects</h2>
-        <div>
-          <p>Printing</p>
-          <img src="" alt="" />
+        <div className="work_grid">
+          <div className="work"></div>
+          <div className="work"></div>
+          <div className="work"></div>
+          <div className="work"></div>
         </div>
       </section>
-      <section className="sect">
-        <h3 className="sect__sub_header">👌</h3>
-        <h2 className="sect__header">What our clients say</h2>
-        <h2 className="sect__header">Reviews</h2>
+      <section className="sect sect--row">
+        <div className="sect__text">
+          <h3 className="sect__sub_header">👌</h3>
+          <h2 className="sect__header">What our clients say</h2>
+          <h2 className="sect__header">Reviews</h2>
+        </div>
         <div>
           <p>Printing</p>
           <img src="" alt="" />
