@@ -1,7 +1,18 @@
 .container {
   background: #090;
-  padding: 1em;
+  padding: 3em 1em;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+
+.icon {
+  width: 100px;
+  height: 100px;
+  background: #000;
+  margin-bottom: 1em;
 }

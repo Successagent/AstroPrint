@@ -1,3 +1,7 @@
+.text--gray {
+  color: #444;
+}
+
 .sect__sub_header {
   color: var(--primary-red);
   font-family: var(--sub-font);
@@ -5,4 +9,48 @@
 
 .sect__header {
   font-family: var(--main-font);
+  font-size: 2.7em;
+  line-height: 3rem;
+  color: #222222;
+  margin-bottom: 1.5em;
+  margin-top: 0.9em;
+}
+
+.sect {
+  padding: 3em;
+  padding-top: 7em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sect--row {
+  flex: 1;
+  flex-direction: row;
+}
+.sect--blue {
+  background: #1a1e5d;
+  color: #fff;
+}
+.sect--blue .sect__header {
+  color: #fff;
+}
+.sect--row-reverse {
+  flex-direction: row-reverse;
+}
+
+:is(.sect--row, .sect--row-reverse) > * {
+  flex: 1;
+}
+
+.sect__text--row {
+  display: flex;
+  gap: 20px;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  margin-bottom: 2em;
+}
+
+.sect--row_start {
+  align-items: start;
 }

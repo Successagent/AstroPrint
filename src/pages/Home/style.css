@@ -1,6 +1,6 @@
 .hero {
   display: flex;
-  min-height: 93vh;
+  min-height: 130vh;
   background: #1a1e5d;
   width: 100%;
 }
@@ -30,12 +30,43 @@
 }
 
 .hero__text h1 {
-  font-size: 6rem;
+  font-size: 7.5rem;
   margin-top: 0.6em;
-  font-family: var(--main-font);
+  /* font-family: var(--main-font); */
+  font-weight: inherit;
   color: #fff;
+  font-weight: 500;
 }
 
 .hero__text button {
   margin-top: 3em;
+}
+
+.showGrid {
+  display: grid;
+  padding: 10px;
+  gap: 30px;
+  padding: 3em;
+  grid-template-areas:
+    "row1 row2 row2 row3"
+    "row1 row2 row2 row3";
+}
+
+.showGrid__row {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.showGrid__row--1 {
+  grid-area: row1;
+}
+.showGrid__row--2 {
+  grid-area: row2;
+}
+.showGrid__row--3 {
+  grid-area: row3;
 }

@@ -1,11 +1,14 @@
 .container {
   display: flex;
   gap: 10px;
+  width: 300px;
 }
 .icon {
   --size: 60px;
   height: var(--size);
   width: var(--size);
+  min-height: var(--size);
+  min-width: var(--size);
   background: #000;
   border-radius: 99999px;
 }
@@ -14,4 +17,5 @@
 .title {
 }
 .body {
+  color: #333;
 }
