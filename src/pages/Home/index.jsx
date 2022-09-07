@@ -3,7 +3,8 @@ import heroImg from "../../assets/hero_img.jpg";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import "./style.css";
-import Button from "../../components/Button/index";
+import Button from "../../components/Button/";
+import { FeatureCard, ServiceCard } from "../../components/Card";
 
 function Home() {
   return (
@@ -30,8 +31,17 @@ function Home() {
         <h3 className="sect__sub_header">Our Core Features</h3>
         <h2 className="sect__header">Experience Allows Us to Print things</h2>
         <div>
-          <p>Printing</p>
-          <img src="" alt="" />
+          <div className="">
+            <FeatureCard />
+            <FeatureCard />
+          </div>
+          <div className="img">
+            <img src="" alt="" />
+          </div>
+          <div className="">
+            <FeatureCard />
+            <FeatureCard />
+          </div>
         </div>
       </section>
       <section>
@@ -40,8 +50,15 @@ function Home() {
           Printing your dream works with AstroPrint
         </h2>
         <div>
-          <p>Printing</p>
           <img src="" alt="" />
+          <div className="">
+            <div className="">25</div>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis
+              quae nisi saepe perferendis exercitationem.
+            </p>
+          </div>
+          {/* Add the quote from the template */}
         </div>
       </section>
       <section>
@@ -50,8 +67,17 @@ function Home() {
           We provide lots of printing & branding services
         </h2>
         <div>
-          <p>Printing</p>
-          <img src="" alt="" />
+          <div className="">
+            <ServiceCard />
+            <ServiceCard />
+          </div>
+          <div className="img">
+            <img src="" alt="" />
+          </div>
+          <div className="">
+            <ServiceCard />
+            <ServiceCard />
+          </div>
         </div>
       </section>
       <section>
