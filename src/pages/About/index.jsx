@@ -12,6 +12,7 @@ import aboutImageFive from '../../assets/Images/img_01-2-768x680.jpg'
 import AboutCard from '../../components/Card/AboutCard/AboutCard'
 import MemberCard from '../../components/Card/MemberCard'
 import ReviewsCard from '../../components/Card/ReviewsCard/ReviewsCard'
+import Footer from '../../components/Footer.jsx/Footer'
 
 function About() {
   return (
@@ -177,6 +178,7 @@ function About() {
           <ReviewsCard />
         </div>
       </div>
+      <Footer/>
     </>
   )
 }

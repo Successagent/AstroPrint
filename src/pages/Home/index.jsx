@@ -7,10 +7,12 @@ import xpImg from "../../assets/25years.png";
 import serviceImg from "../../assets/serviceImg.jpg";
 
 import Header from "../../components/Header";
-import Footer from "../../components/Footer";
+import Footer from "../../components/Footer.jsx/Footer";
+
 import "./style.css";
 import Button from "../../components/Button/";
 import { FeatureCard, ServiceCard, PostCard } from "../../components/Card";
+
 
 function Home() {
   return (
@@ -178,7 +180,7 @@ function Home() {
           <PostCard />
         </div>
       </section>
-      <Footer />
+      <Footer/>
     </>
   );
 }
