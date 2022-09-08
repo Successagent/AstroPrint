@@ -496,6 +496,10 @@ img {
   .about-section-six {
     padding: 100px 15px;
   }
+
+  .hide {
+    display: none;
+  }
 }
 
 @media (min-width: 375px) and (max-width: 770px) {

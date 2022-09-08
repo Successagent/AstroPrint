@@ -1,5 +1,13 @@
 import React, { useState } from 'react'
-import { FaCalendar, FaPhone } from 'react-icons/fa'
+import {
+  FaCalendar,
+  FaPhone,
+  FaFacebookF,
+  FaTwitter,
+  FaLinkedinIn,
+  FaInstagram,
+} from 'react-icons/fa'
+
 import { FiArrowRight } from 'react-icons/fi'
 import '../../pages/About/About.css'
 import { Button, SmallButton } from '../Button'
@@ -21,9 +29,9 @@ const Footer = () => {
         </div>
         <div className="footer-item-one-items">
           <img src={footerLogoTwo} alt="" />
-          <img src={footerLogoThree} alt="" />
-          <img src={footerLogoFour} alt="" />
-          <img src={footerLogoFive} alt="" />
+          <img className='hide' src={footerLogoThree} alt="" />
+          <img className='hide' src={footerLogoFour} alt="" />
+          <img className='hide' src={footerLogoFive} alt="" />
         </div>
       </div>
       <div className="footer-item-two">
@@ -84,9 +92,26 @@ const Footer = () => {
               <FiArrowRight />
             </SmallButton>
           </form>
-          <div className='footer-contact-section-last-item'>
-            <FaPhone className='footer-phone'></FaPhone>
-            <h5 className='h5'>+012 (345) 678 99</h5>
+          <div className="footer-contact-section-last-item">
+            <FaPhone className="footer-phone"></FaPhone>
+            <h5 className="h5">+012 (345) 678 99</h5>
+          </div>
+        </div>
+      </div>
+      <div className='footer-last-item'>
+        <p className="p">Copyright ©2022 BDevs. All Rights Reserved</p>
+        <div className='footer-last-item-child-two'>
+          <div>
+            <FaFacebookF></FaFacebookF>
+          </div>
+          <div>
+            <FaTwitter></FaTwitter>
+          </div>
+          <div>
+            <FaLinkedinIn></FaLinkedinIn>
+          </div>
+          <div>
+            <FaInstagram></FaInstagram>
           </div>
         </div>
       </div>
