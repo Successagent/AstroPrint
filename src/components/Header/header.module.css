@@ -2,28 +2,47 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1.2em 10%;
-  box-shadow: 0 3px 5px #0007;
+  padding: 1em 10%;
+  box-shadow: 0 3px 8px #0005;
   position: relative;
   z-index: 4;
+  background: #fff;
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+  left: 0;
+  animation: fadeIn 500ms;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
 }
 
 .links {
   display: flex;
   align-items: center;
-  gap: 1em;
+  gap: 2em;
   list-style: none;
 }
 
 .link {
-  color: #444;
-  font-weight: bold;
+  color: #666;
+  font-weight: medium;
   transition: all 200ms;
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 .link:hover {
   color: var(--primary-red);
-  font-weight: bold;
+  font-weight: medium;
 }
 
 .buttonSet {
