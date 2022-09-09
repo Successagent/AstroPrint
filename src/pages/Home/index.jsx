@@ -8,9 +8,9 @@ import serviceImg from "../../assets/serviceImg.jpg";
 
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
-import "./style.css";
+import "./Home.css";
 import Button from "../../components/Button/";
-import { FeatureCard, ServiceCard, PostCard } from "../../components/Card";
+import { FeatureCard, ServiceCard, BlogCard } from "../../components/Card";
 
 function Home() {
   return (
@@ -38,7 +38,7 @@ function Home() {
             <FeatureCard />
             <FeatureCard />
           </div>
-          <div className="showGrid__row showGrid__row--2">
+          <div className="showGrid__row showGrid__row--2 showGrid__row-img">
             <img src={featuresImg} alt="" />
           </div>
           <div className="showGrid__row showGrid__row--3">
@@ -58,7 +58,8 @@ function Home() {
           </div>
           <div className="sect__text">
             <div className="sect__text--row">
-              <img src={xpImg} alt="" />
+              <img className="wrap-image" src={xpImg} alt="" />
+              {/* <div className="wrap-image"></div> */}
               <p>
                 Sed ut perspiciatis unde omnis iste natus error sit voluptatem
                 accusantiu dolorem laudantium, totam rem aper iam eaque ipsa
@@ -173,10 +174,10 @@ function Home() {
         <h3 className="sect__sub_header">Latest News & blog</h3>
         <h2 className="sect__header">Get More Updates for news & articles</h2>
         <h2 className="sect__header--bg">Blog</h2>
-        <div>
-          <PostCard />
-          <PostCard />
-          <PostCard />
+        <div className="blog_list">
+          <BlogCard />
+          <BlogCard />
+          <BlogCard />
         </div>
       </section>
       <Footer />

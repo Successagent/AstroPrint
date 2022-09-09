@@ -30,3 +30,9 @@
   display: flex;
   gap: 10px;
 }
+
+@media screen and (max-width: 768px) {
+  .links {
+    display: none;
+  }
+}
