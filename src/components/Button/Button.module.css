@@ -3,10 +3,11 @@
   background-color: var(--primary-red);
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 1em;
   padding: 6px;
   position: relative;
   overflow: hidden;
+  padding-left: 1em;
 }
 
 .fillFlex {
@@ -19,7 +20,7 @@
 }
 
 .button * {
-  z-index: 4;
+  z-index: 1;
 }
 
 .button::before {
@@ -47,9 +48,10 @@
 }
 
 .arrowContainer {
+  --size: 40px;
   padding: 4px;
-  height: 30px;
-  width: 30px;
+  height: var(--size);
+  width: var(--size);
   background: #fff;
   display: flex;
   align-items: center;
