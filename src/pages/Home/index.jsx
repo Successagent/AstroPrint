@@ -159,7 +159,7 @@ function Home() {
           <div className="work"></div>
         </div>
       </section>
-      <section className="sect sect--row">
+      {/* <section className="sect sect--row">
         <div className="sect__text">
           <h3 className="sect__sub_header">👌</h3>
           <h2 className="sect__header">What our clients say</h2>
@@ -169,11 +169,11 @@ function Home() {
           <p>Printing</p>
           <img src="" alt="" />
         </div>
-      </section>
+      </section> */}
       <section className="sect">
         <h3 className="sect__sub_header">Latest News & blog</h3>
         <h2 className="sect__header">Get More Updates for news & articles</h2>
-        <h2 className="sect__header--bg">Blog</h2>
+        {/* <h2 className="sect__header--bg">Blog</h2> */}
         <div className="blog_list">
           <BlogCard />
           <BlogCard />
