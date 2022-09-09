@@ -197,7 +197,8 @@
 
 @media (max-width: 375px) {
   .service-sec-one,
-  .service-section-three {
+  .service-section-three,
+  .service-section-four {
     flex-direction: column;
     padding: 0px;
     padding: 100px 15px;
@@ -223,5 +224,14 @@
 
   .service-sec-checkmark {
     font-size: 25px;
+  }
+
+  .service-section-four{
+    height: auto;
+    padding: 100px 0;
+  }
+
+  .service-section-four > div {
+    width: 100%;
   }
 }
