@@ -7,12 +7,10 @@ import xpImg from "../../assets/25years.png";
 import serviceImg from "../../assets/serviceImg.jpg";
 
 import Header from "../../components/Header";
-import Footer from "../../components/Footer.jsx/Footer";
-
-import "./style.css";
+import Footer from "../../components/Footer";
+import "./Home.css";
 import Button from "../../components/Button/";
-import { FeatureCard, ServiceCard, PostCard } from "../../components/Card";
-
+import { FeatureCard, ServiceCard, BlogCard } from "../../components/Card";
 
 function Home() {
   return (
@@ -22,12 +20,9 @@ function Home() {
         <div className="hero__text">
           <h3 className="sect__sub_header">— Welcome to AstroPrint</h3>
           <h1>
-            {" "}
-            Modern
-            <br />
-            Printing
-            <br />
-            Agency
+            Modern <br />
+            Printing <br />
+            Agency{" "}
           </h1>
           <Button>Discover More</Button>
         </div>
@@ -43,7 +38,7 @@ function Home() {
             <FeatureCard />
             <FeatureCard />
           </div>
-          <div className="showGrid__row showGrid__row--2">
+          <div className="showGrid__row showGrid__row--2 showGrid__row-img">
             <img src={featuresImg} alt="" />
           </div>
           <div className="showGrid__row showGrid__row--3">
@@ -63,7 +58,8 @@ function Home() {
           </div>
           <div className="sect__text">
             <div className="sect__text--row">
-              <img src={xpImg} alt="" />
+              <img className="wrap-image" src={xpImg} alt="" />
+              {/* <div className="wrap-image"></div> */}
               <p>
                 Sed ut perspiciatis unde omnis iste natus error sit voluptatem
                 accusantiu dolorem laudantium, totam rem aper iam eaque ipsa
@@ -156,31 +152,35 @@ function Home() {
       <section className="sect">
         <h3 className="sect__sub_header">Our Recent Works</h3>
         <h2 className="sect__header">Let's See our latest projects</h2>
+        <div className="work_grid">
+          <div className="work"></div>
+          <div className="work"></div>
+          <div className="work"></div>
+          <div className="work"></div>
+        </div>
+      </section>
+      {/* <section className="sect sect--row">
+        <div className="sect__text">
+          <h3 className="sect__sub_header">👌</h3>
+          <h2 className="sect__header">What our clients say</h2>
+          <h2 className="sect__header">Reviews</h2>
+        </div>
         <div>
           <p>Printing</p>
           <img src="" alt="" />
         </div>
-      </section>
-      <section className="sect">
-        <h3 className="sect__sub_header">👌</h3>
-        <h2 className="sect__header">What our clients say</h2>
-        <h2 className="sect__header">Reviews</h2>
-        <div>
-          <p>Printing</p>
-          <img src="" alt="" />
-        </div>
-      </section>
+      </section> */}
       <section className="sect">
         <h3 className="sect__sub_header">Latest News & blog</h3>
         <h2 className="sect__header">Get More Updates for news & articles</h2>
-        <h2 className="sect__header--bg">Blog</h2>
-        <div>
-          <PostCard />
-          <PostCard />
-          <PostCard />
+        {/* <h2 className="sect__header--bg">Blog</h2> */}
+        <div className="blog_list">
+          <BlogCard />
+          <BlogCard />
+          <BlogCard />
         </div>
       </section>
-      <Footer/>
+      <Footer />
     </>
   );
 }

@@ -1,6 +1,6 @@
 .container {
-  background: #090;
-  padding: 3em 1em;
+  background: attr(data-color);
+  padding: 3em 0.3em;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -13,6 +13,20 @@
 .icon {
   width: 100px;
   height: 100px;
-  background: #000;
   margin-bottom: 1em;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 1.4rem;
+}
+
+.body {
+  font-weight: 400;
+  margin: 20px 0;
+  width: 90%;
+  line-height: 1.8em;
+}
+
+.link {
 }

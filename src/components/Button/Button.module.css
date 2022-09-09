@@ -3,18 +3,24 @@
   background-color: var(--primary-red);
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 1em;
   padding: 6px;
   position: relative;
   overflow: hidden;
+  padding-left: 1em;
 }
 
 .fillFlex {
   align-self: flex-start;
 }
+@media screen and (max-width: 768px) {
+  .fillFlex {
+    align-self: center;
+  }
+}
 
 .button * {
-  z-index: 4;
+  z-index: 1;
 }
 
 .button::before {
@@ -22,11 +28,10 @@
   top: 0;
   left: -100%;
   position: absolute;
-  width: 100%;
+  width: 102%;
   height: 100%;
   background: #000;
   z-index: 0;
-  transform: translate(200%);
 }
 
 .button p {
@@ -43,9 +48,10 @@
 }
 
 .arrowContainer {
+  --size: 40px;
   padding: 4px;
-  height: 30px;
-  width: 30px;
+  height: var(--size);
+  width: var(--size);
   background: #fff;
   display: flex;
   align-items: center;
@@ -57,14 +63,14 @@
     transform: translate(0%);
   }
   100% {
-    transform: translate(100%);
+    transform: translate(98%);
   }
 }
 @keyframes slideOut {
   0% {
-    transform: translate(100%);
+    transform: translate(98%);
   }
   100% {
-    transform: translate(200%);
+    transform: translate(202%);
   }
 }

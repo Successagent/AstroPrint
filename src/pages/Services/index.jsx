@@ -1,12 +1,12 @@
-import React, { useState } from 'react'
-import AboutCard from '../../components/Card/AboutCard/AboutCard'
-import ReviewsCard from '../../components/Card/ReviewsCard/ReviewsCard'
-import Footer from '../../components/Footer.jsx/Footer'
-import Header from '../../components/Header'
+import React, { useState } from "react";
+import AboutCard from "../../components/Card/AboutCard/AboutCard";
+import ReviewsCard from "../../components/Card/ReviewsCard/ReviewsCard";
+import Footer from "../../components/Footer/Footer";
+import Header from "../../components/Header";
+import Counter from "../../components/Counter";
+import serviceLogoOne from "../../assets/Images/img_02-3.png";
 
-import serviceLogoOne from '../../assets/Images/img_02-3.png'
-
-import { FaCube, FaLaptopCode, FaTrophy } from 'react-icons/fa'
+import { FaCube, FaLaptopCode, FaTrophy } from "react-icons/fa";
 import {
   FiArrowRight,
   FiCheck,
@@ -14,12 +14,12 @@ import {
   FiSettings,
   FiHeart,
   FiTruck,
-} from 'react-icons/fi'
+} from "react-icons/fi";
 
-import { Button, SmallButton } from '../../components/Button'
+import { Button, SmallButton } from "../../components/Button";
 
-import '../Services/Service.css'
-import '../About/About.css'
+import "../Services/Service.css";
+import "../About/About.css";
 
 function Services() {
   return (
@@ -52,7 +52,7 @@ function Services() {
             <div>
               <div
                 className="service-sec-two-icons-con"
-                style={{ backgroundColor: '#FEC931' }}
+                style={{ backgroundColor: "#FEC931" }}
               >
                 <FiPrinter></FiPrinter>
               </div>
@@ -69,7 +69,7 @@ function Services() {
             <div>
               <div
                 className="service-sec-two-icons-con"
-                style={{ backgroundColor: '#1A1E5D' }}
+                style={{ backgroundColor: "#1A1E5D" }}
               >
                 <FaCube></FaCube>
               </div>
@@ -100,7 +100,7 @@ function Services() {
             <div>
               <div
                 className="service-sec-two-icons-con"
-                style={{ backgroundColor: '#767676' }}
+                style={{ backgroundColor: "#767676" }}
               >
                 <FiSettings></FiSettings>
               </div>
@@ -167,38 +167,47 @@ function Services() {
         <div className="service-section-four">
           <div>
             <div>
-              <div style={{ backgroundColor: '#FA0213' }}>
+              <div style={{ backgroundColor: "#FA0213" }}>
                 <FiHeart></FiHeart>
               </div>
             </div>
-            <h3 className="h3">207565</h3>
+            <h3 className="h3">
+              <Counter count={1000} />
+            </h3>
             <h5 className="h5">Loving Customer</h5>
           </div>
           <div>
             <div>
-              <div style={{ backgroundColor: '#209FFA' }}>
+              <div style={{ backgroundColor: "#209FFA" }}>
                 <FaTrophy></FaTrophy>
               </div>
             </div>
-            <h3 className="h3">63142</h3>
+            <h3 className="h3">
+              <Counter count={28910} />
+            </h3>
             <h5 className="h5">Awards Wins</h5>
           </div>
           <div>
             <div>
-              <div style={{ backgroundColor: '#FEC931' }}>
+              <div style={{ backgroundColor: "#FEC931" }}>
                 <FiTruck></FiTruck>
               </div>
             </div>
-            <h3 className="h3">35620</h3>
+
+            <h3 className="h3">
+              <Counter count={24989} />
+            </h3>
             <h5 className="h5">Transportation</h5>
           </div>
           <div>
             <div>
-              <div style={{ backgroundColor: '#5F43C5' }}>
+              <div style={{ backgroundColor: "#5F43C5" }}>
                 <FaLaptopCode></FaLaptopCode>
               </div>
             </div>
-            <h3 className="h3">55868</h3>
+            <h3 className="h3">
+              <Counter count={323299} />
+            </h3>
             <h5 className="h5">Digital Computer</h5>
           </div>
         </div>
@@ -212,7 +221,7 @@ function Services() {
       </div>
       <Footer />
     </>
-  )
+  );
 }
 
-export default Services
+export default Services;
