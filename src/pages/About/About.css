@@ -144,8 +144,7 @@ img {
 .member-card {
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
-.about-card {
-}
+
 
 .about-card > div div:nth-child(2) {
   background-image: url(../../assets/Images/bg_icon.png);
