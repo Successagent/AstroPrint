@@ -7,50 +7,50 @@ const ReviewsCard = () => {
   return (
     <div className="review-card">
       <div>
-        <div>
-          <p>
+        <div className='reviewcard-caption'>
+          <p className='h5'>
             Title Sed ut perspiciatis unde omnis iste natus error sit voluptatem
             accusantium doloremqe laudantium totam rem aperiam eaque ipsa quae
             abillo inventore
           </p>
         </div>
-        <div>
+        <div className='reviewcard-item-two'>
           <img src={ReviewLogoOne} alt="" />
           <div>
             <h3>Cassey Vegas</h3>
-            <p>Web Develop</p>
+            <p className='h5'>Web Develop</p>
           </div>
         </div>
       </div>
       <div>
-        <div>
-          <p>
+        <div className='reviewcard-caption'>
+          <p className='h5'>
             Title Sed ut perspiciatis unde omnis iste natus error sit voluptatem
             accusantium doloremqe laudantium totam rem aperiam eaque ipsa quae
             abillo inventore
           </p>
         </div>
-        <div>
+        <div className='reviewcard-item-two'>
           <img src={ReviewLogoTwo} alt="" />
           <div>
             <h3>Cassey Vegas</h3>
-            <p>Web Develop</p>
+            <p className='h5'>Web Develop</p>
           </div>
         </div>
       </div>
       <div>
-        <div>
-          <p>
+        <div className='reviewcard-caption'>
+          <p className='h5'>
             Title Sed ut perspiciatis unde omnis iste natus error sit voluptatem
             accusantium doloremqe laudantium totam rem aperiam eaque ipsa quae
             abillo inventore
           </p>
         </div>
-        <div>
+        <div className='reviewcard-item-two'>
           <img src={ReviewLogoOne} alt="" />
           <div>
             <h3>Cassey Vegas</h3>
-            <p>Web Develop</p>
+            <p className='h5'>Web Develop</p>
           </div>
         </div>
       </div>
