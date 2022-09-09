@@ -1,18 +1,18 @@
-import React, { useState } from 'react'
-import Header from '../../components/Header'
-import '../About/About.css'
+import React, { useState } from "react";
+import Header from "../../components/Header";
+import "../About/About.css";
 
-import { FaMinus, FaPlus } from 'react-icons/fa'
+import { FaMinus, FaPlus } from "react-icons/fa";
 
-import aboutImageOne from '../../assets/Images/img_01.png'
-import aboutImageTwo from '../../assets/Images/reward.png'
-import aboutImageThree from '../../assets/Images/iso.png'
-import aboutImageFour from '../../assets/Images/img_01-9.jpg'
-import aboutImageFive from '../../assets/Images/img_01-2-768x680.jpg'
-import AboutCard from '../../components/Card/AboutCard/AboutCard'
-import MemberCard from '../../components/Card/MemberCard'
-import ReviewsCard from '../../components/Card/ReviewsCard/ReviewsCard'
-import Footer from '../../components/Footer.jsx/Footer'
+import aboutImageOne from "../../assets/Images/img_01.png";
+import aboutImageTwo from "../../assets/Images/reward.png";
+import aboutImageThree from "../../assets/Images/iso.png";
+import aboutImageFour from "../../assets/Images/img_01-9.jpg";
+import aboutImageFive from "../../assets/Images/img_01-2-768x680.jpg";
+import AboutCard from "../../components/Card/AboutCard/AboutCard";
+import MemberCard from "../../components/Card/MemberCard";
+import ReviewsCard from "../../components/Card/ReviewsCard/ReviewsCard";
+import Footer from "../../components/Footer";
 
 function About() {
   return (
@@ -26,7 +26,7 @@ function About() {
             <li>About</li>
           </ul>
         </div>
-        <div className="about-section-two">
+        <div className="sect sect--row">
           <div>
             <img src={aboutImageOne} alt="" />
           </div>
@@ -135,7 +135,7 @@ function About() {
                 dicta sunt explicabo.
               </h5>
               <div className="circle-con">
-                <div className='circle-con-items'>
+                <div className="circle-con-items">
                   <div>
                     <h2 className="h2">75%</h2>
                   </div>
@@ -149,7 +149,7 @@ function About() {
                     </div>
                   </div>
                 </div>
-                <div className='circle-con-items'>
+                <div className="circle-con-items">
                   <div>
                     <h2 className="h2">85%</h2>
                   </div>
@@ -178,9 +178,9 @@ function About() {
           <ReviewsCard />
         </div>
       </div>
-      <Footer/>
+      <Footer />
     </>
-  )
+  );
 }
 
-export default About
+export default About;

@@ -7,17 +7,10 @@ import xpImg from "../../assets/25years.png";
 import serviceImg from "../../assets/serviceImg.jpg";
 
 import Header from "../../components/Header";
-<<<<<<< HEAD
 import Footer from "../../components/Footer";
 import "./Home.css";
-=======
-import Footer from "../../components/Footer.jsx/Footer";
-
-import "./style.css";
->>>>>>> 0014f041bfab025a2fa145237564f3693aad54b5
 import Button from "../../components/Button/";
 import { FeatureCard, ServiceCard, BlogCard } from "../../components/Card";
-
 
 function Home() {
   return (
@@ -187,7 +180,7 @@ function Home() {
           <BlogCard />
         </div>
       </section>
-      <Footer/>
+      <Footer />
     </>
   );
 }

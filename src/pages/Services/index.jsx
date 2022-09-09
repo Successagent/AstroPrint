@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import AboutCard from "../../components/Card/AboutCard/AboutCard";
 import ReviewsCard from "../../components/Card/ReviewsCard/ReviewsCard";
-import Footer from "../../components/Footer.jsx/Footer";
+import Footer from "../../components/Footer/Footer";
 import Header from "../../components/Header";
-
+import Counter from "../../components/Counter";
 import serviceLogoOne from "../../assets/Images/img_02-3.png";
 
 import { FaCube, FaLaptopCode, FaTrophy } from "react-icons/fa";
@@ -171,7 +171,9 @@ function Services() {
                 <FiHeart></FiHeart>
               </div>
             </div>
-            <h3 className="h3">207565</h3>
+            <h3 className="h3">
+              <Counter count={1000} />
+            </h3>
             <h5 className="h5">Loving Customer</h5>
           </div>
           <div>
@@ -180,7 +182,9 @@ function Services() {
                 <FaTrophy></FaTrophy>
               </div>
             </div>
-            <h3 className="h3">63142</h3>
+            <h3 className="h3">
+              <Counter count={28910} />
+            </h3>
             <h5 className="h5">Awards Wins</h5>
           </div>
           <div>
@@ -190,7 +194,9 @@ function Services() {
               </div>
             </div>
 
-            <h3 className="h3">35620</h3>
+            <h3 className="h3">
+              <Counter count={24989} />
+            </h3>
             <h5 className="h5">Transportation</h5>
           </div>
           <div>
@@ -199,7 +205,9 @@ function Services() {
                 <FaLaptopCode></FaLaptopCode>
               </div>
             </div>
-            <h3 className="h3">55868</h3>
+            <h3 className="h3">
+              <Counter count={323299} />
+            </h3>
             <h5 className="h5">Digital Computer</h5>
           </div>
         </div>

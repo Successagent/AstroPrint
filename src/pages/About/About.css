@@ -130,6 +130,9 @@ img {
   align-items: center;
   justify-content: center;
   gap: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 1rem;
 }
 
 .about-card,
@@ -137,6 +140,9 @@ img {
   margin-top: 40px;
   position: relative;
   align-items: flex-start;
+}
+
+.about-card {
 }
 
 .about-card > div div:nth-child(2) {
