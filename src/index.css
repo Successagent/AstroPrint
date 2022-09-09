@@ -241,6 +241,8 @@ button {
   border-radius: 50%;
 }
 
+
+
 @media (max-width: 375px) {
   footer {
     padding: 15px;

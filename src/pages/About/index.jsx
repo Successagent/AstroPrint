@@ -1,31 +1,26 @@
-import React, { useState } from "react";
-import Header from "../../components/Header";
-import "../About/About.css";
+import React, { useState } from 'react'
+import Header from '../../components/Header'
+import '../About/About.css'
 
-import { FaMinus, FaPlus } from "react-icons/fa";
+import { FaMinus, FaPlus } from 'react-icons/fa'
 
-import aboutImageOne from "../../assets/Images/img_01.png";
-import aboutImageTwo from "../../assets/Images/reward.png";
-import aboutImageThree from "../../assets/Images/iso.png";
-import aboutImageFour from "../../assets/Images/img_01-9.jpg";
-import aboutImageFive from "../../assets/Images/img_01-2-768x680.jpg";
-import AboutCard from "../../components/Card/AboutCard/AboutCard";
-import MemberCard from "../../components/Card/MemberCard";
-import ReviewsCard from "../../components/Card/ReviewsCard/ReviewsCard";
-import Footer from "../../components/Footer";
+import aboutImageOne from '../../assets/Images/img_01.png'
+import aboutImageTwo from '../../assets/Images/reward.png'
+import aboutImageThree from '../../assets/Images/iso.png'
+import aboutImageFour from '../../assets/Images/img_01-9.jpg'
+import aboutImageFive from '../../assets/Images/img_01-2-768x680.jpg'
+import AboutCard from '../../components/Card/AboutCard/AboutCard'
+import MemberCard from '../../components/Card/MemberCard'
+import ReviewsCard from '../../components/Card/ReviewsCard/ReviewsCard'
+import Footer from '../../components/Footer'
+import Banner from '../../components/Banner'
 
 function About() {
   return (
     <>
       <Header />
       <div className="about-section">
-        <div className="about-section-one">
-          <h2 className="h2">About</h2>
-          <ul>
-            <li>Home</li>
-            <li>About</li>
-          </ul>
-        </div>
+        <Banner />
         <div className="sect sect--row">
           <div>
             <img src={aboutImageOne} alt="" />
@@ -180,7 +175,7 @@ function About() {
       </div>
       <Footer />
     </>
-  );
+  )
 }
 
-export default About;
+export default About

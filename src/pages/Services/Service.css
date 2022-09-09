@@ -29,7 +29,8 @@
 }
 
 .service-sec-one-item-one button,
-.service-section-three button {
+.service-section-three button,
+.faq-section-btn {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -226,7 +227,7 @@
     font-size: 25px;
   }
 
-  .service-section-four{
+  .service-section-four {
     height: auto;
     padding: 100px 0;
   }
