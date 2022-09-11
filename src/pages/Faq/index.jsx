@@ -8,11 +8,12 @@ import aboutImageFour from '../../assets/Images/img_01-9.jpg'
 import aboutImageFive from '../../assets/Images/img_01-2-768x680.jpg'
 
 import { FaPlus, FaMinus } from 'react-icons/fa'
+import AboutCard from '../../components/Card/AboutCard/AboutCard'
 
 const Faq = () => {
   return (
     <>
-      <Header />
+      {/* <Header /> */}
       <div className="faq-section">
         <Banner />
         <div className="faq-section-one">
@@ -130,6 +131,15 @@ const Faq = () => {
               <img src={aboutImageFive} alt="" />
             </div>
           </div>
+        </div>
+        <div className="service-section-two about-section-three">
+          <h4 className="h4">What We Offers</h4>
+          <div>
+            <h2 className="h2">
+              We Provide Lot’s Of Printing & Branding Service
+            </h2>
+          </div>
+          <AboutCard />
         </div>
       </div>
       <Footer />

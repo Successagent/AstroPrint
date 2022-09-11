@@ -82,3 +82,30 @@
   padding: 0;
   text-transform: uppercase;
 }
+
+@media (max-width: 375px) {
+  .faq-section-one {
+    flex-direction: column;
+    padding: 0;
+    padding: 80px 30px;
+    gap: 30px;
+  }
+
+  .faq-section-one > div {
+    width: 100%;
+  }
+
+  .faq-section-two-part-one {
+    height: auto;
+    padding: 0;
+  }
+
+  .faq-form > div,
+  .faq-form textarea {
+    width: 100%;
+  }
+
+  .faq-section-two .about-section-five-part-one > div:nth-child(2) {
+    padding: 100px 15px;
+  }
+}
