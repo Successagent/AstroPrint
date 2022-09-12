@@ -1,26 +1,15 @@
-import React from "react";
-
-<<<<<<< HEAD
+import React from 'react'
+import { GoogleMap, Marker } from "react-google-maps"
 import Banner from '../../components/Banner'
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
-=======
-import Banner from "../../components/Banner";
-import Header from "../../components/Header";
-import Footer from "../../components/Footer";
 
-import Loading from "../../components/HOCs/Loading";
->>>>>>> b14ff5019cbe3f66a00110e06c8453f75a9fd3db
+import Loading from '../../components/HOCs/Loading'
 
-import { FaMapMarkedAlt } from "react-icons/fa";
+import { FaMapMarkedAlt } from 'react-icons/fa'
 
-<<<<<<< HEAD
 import '../Contact/Contact.css'
 import '../About/About.css'
-=======
-import "../Contact/Contact.css";
-import "../About/About.css";
->>>>>>> b14ff5019cbe3f66a00110e06c8453f75a9fd3db
 
 const Contact = () => {
   return (
@@ -75,12 +64,19 @@ const Contact = () => {
           </form>
         </div>
         <div className="contact-section-three">
-          
+          <GoogleMap
+            defaultZoom={8}
+            defaultCenter={{ lat: -34.397, lng: 150.644 }}
+          >
+            {true && (
+              <Marker position={{ lat: -34.397, lng: 150.644 }} />
+            )}
+          </GoogleMap>
         </div>
       </div>
       <Footer />
     </>
-  );
-};
+  )
+}
 
-export default Loading(Contact);
+export default Loading(Contact)

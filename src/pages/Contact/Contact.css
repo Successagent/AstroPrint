@@ -101,8 +101,6 @@
 }
 
 .contact-form textarea::placeholder {
-  padding-left: 20px;
-  padding-top: 20px;
   font-size: 15px;
   font-weight: 700;
 }
@@ -111,16 +109,21 @@
   grid-area: button;
 }
 
+.contact-form input {
+  height: 100%;
+}
+
 .contact-form > div,
 .contact-form input,
 .contact-form textarea {
   background-color: #f0f0f0;
   border: none;
+  color: black;
+  outline: none;
 }
 
-.contact-section-three {
-  background-color: var(--primary-red);
-  height: 600px;
+.contact-form textarea {
+  padding: 20px;
 }
 
 @media (max-width: 375px) {
