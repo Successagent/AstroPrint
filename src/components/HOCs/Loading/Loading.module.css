@@ -47,7 +47,7 @@
 }
 
 .hidden {
-  opacity: 0.8;
+  opacity: 0.6;
   pointer-events: none;
   clip-path: polygon(
     0% 0%,

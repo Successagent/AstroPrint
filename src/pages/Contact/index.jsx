@@ -1,20 +1,33 @@
-import React from 'react'
+import React from "react";
 
+<<<<<<< HEAD
 import Banner from '../../components/Banner'
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
+=======
+import Banner from "../../components/Banner";
+import Header from "../../components/Header";
+import Footer from "../../components/Footer";
 
-import { FaMapMarkedAlt } from 'react-icons/fa'
+import Loading from "../../components/HOCs/Loading";
+>>>>>>> b14ff5019cbe3f66a00110e06c8453f75a9fd3db
 
+import { FaMapMarkedAlt } from "react-icons/fa";
+
+<<<<<<< HEAD
 import '../Contact/Contact.css'
 import '../About/About.css'
+=======
+import "../Contact/Contact.css";
+import "../About/About.css";
+>>>>>>> b14ff5019cbe3f66a00110e06c8453f75a9fd3db
 
 const Contact = () => {
   return (
     <>
       <Header />
       <div className="Contact-section">
-        <Banner />
+        <Banner page="Contact" />
         <div className="contact-section-one">
           <div>
             <div>
@@ -67,7 +80,7 @@ const Contact = () => {
       </div>
       <Footer />
     </>
-  )
-}
+  );
+};
 
-export default Contact
+export default Loading(Contact);
