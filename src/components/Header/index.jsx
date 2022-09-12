@@ -1,10 +1,10 @@
 import React, { useState, useEffect, useRef } from "react";
 import { useInView } from "react-intersection-observer";
 import { Link } from "react-router-dom";
+import { AiOutlineMenu } from "react-icons/ai";
 import HeaderStyles from "./Header.module.css";
 import SideMenu from "./SideMenu";
 import { Button, SmallButton } from "../Button";
-
 const HeaderContent = ({ setIsSideMenuOpen }) => {
   return (
     <>
@@ -36,7 +36,7 @@ const HeaderContent = ({ setIsSideMenuOpen }) => {
         className={HeaderStyles.menuBtn}
         onClick={() => setIsSideMenuOpen(true)}
       >
-        M
+        <AiOutlineMenu />
       </button>
     </>
   );

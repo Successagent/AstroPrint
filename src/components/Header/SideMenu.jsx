@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { useInView } from "react-intersection-observer";
+import { AiOutlineClose } from "react-icons/ai";
 import { Link } from "react-router-dom";
 import SideMenuStyles from "./SideMenu.module.css";
 import { Button, SmallButton } from "../Button";
@@ -29,7 +30,7 @@ function SideMenu({ isOpen, setIsOpen }) {
           className={SideMenuStyles.close}
           onClick={() => setIsOpen(false)}
         >
-          x
+          <AiOutlineClose />
         </button>
 
         <ul className={SideMenuStyles.links}>
@@ -51,8 +52,8 @@ function SideMenu({ isOpen, setIsOpen }) {
         </ul>
 
         <div className={SideMenuStyles.buttonSet}>
-          <SmallButton width={"50px"}>Q</SmallButton>
-          <Button>Get A Quote</Button>
+          {/* <SmallButton width={"50px"}>Q</SmallButton> */}
+          {/* <Button>Get A Quote</Button> */}
         </div>
       </aside>
     </div>
