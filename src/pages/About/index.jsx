@@ -1,19 +1,19 @@
-import React, { useState } from 'react'
-import Header from '../../components/Header'
-import '../About/About.css'
+import React, { useState } from "react";
+import Header from "../../components/Header";
+import "../About/About.css";
+import Loading from "../../components/HOCs/Loading";
+import { FaMinus, FaPlus } from "react-icons/fa";
 
-import { FaMinus, FaPlus } from 'react-icons/fa'
-
-import aboutImageOne from '../../assets/Images/img_01.png'
-import aboutImageTwo from '../../assets/Images/reward.png'
-import aboutImageThree from '../../assets/Images/iso.png'
-import aboutImageFour from '../../assets/Images/img_01-9.jpg'
-import aboutImageFive from '../../assets/Images/img_01-2-768x680.jpg'
-import AboutCard from '../../components/Card/AboutCard/AboutCard'
-import MemberCard from '../../components/Card/MemberCard'
-import ReviewsCard from '../../components/Card/ReviewsCard/ReviewsCard'
-import Footer from '../../components/Footer'
-import Banner from '../../components/Banner'
+import aboutImageOne from "../../assets/Images/img_01.png";
+import aboutImageTwo from "../../assets/Images/reward.png";
+import aboutImageThree from "../../assets/Images/iso.png";
+import aboutImageFour from "../../assets/Images/img_01-9.jpg";
+import aboutImageFive from "../../assets/Images/img_01-2-768x680.jpg";
+import AboutCard from "../../components/Card/AboutCard/AboutCard";
+import MemberCard from "../../components/Card/MemberCard";
+import ReviewsCard from "../../components/Card/ReviewsCard/ReviewsCard";
+import Footer from "../../components/Footer";
+import Banner from "../../components/Banner";
 
 function About() {
   return (
@@ -175,7 +175,7 @@ function About() {
       </div>
       <Footer />
     </>
-  )
+  );
 }
 
-export default About
+export default Loading(About);

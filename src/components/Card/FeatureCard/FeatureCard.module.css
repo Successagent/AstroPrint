@@ -9,8 +9,10 @@
   width: var(--size);
   min-height: var(--size);
   min-width: var(--size);
-  background: #000;
   border-radius: 99999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .text {
 }

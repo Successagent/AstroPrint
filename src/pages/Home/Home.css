@@ -37,6 +37,10 @@
   margin-top: 3em;
 }
 
+.sect__text > button {
+  margin-top: 2em;
+}
+
 .showGrid {
   display: grid;
   padding: 10px;

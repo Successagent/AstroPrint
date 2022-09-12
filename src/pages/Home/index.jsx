@@ -6,6 +6,8 @@ import featuresImg from "../../assets/featuresImg.jpg";
 import xpImg from "../../assets/25years.png";
 import serviceImg from "../../assets/serviceImg.jpg";
 
+import Loading from "../../components/HOCs/Loading";
+
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import "./Home.css";
@@ -185,4 +187,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default Loading(Home);
