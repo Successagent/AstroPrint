@@ -1,21 +1,23 @@
-import React from 'react'
-import Banner from '../../components/Banner'
-import Footer from '../../components/Footer/Footer'
-import Header from '../../components/Header'
+import React from "react";
+import Banner from "../../components/Banner";
+import Footer from "../../components/Footer/Footer";
+import Header from "../../components/Header";
 
-import '../Faq/Faq.css'
-import aboutImageFour from '../../assets/Images/img_01-9.jpg'
-import aboutImageFive from '../../assets/Images/img_01-2-768x680.jpg'
+import Loading from "../../components/HOCs/Loading";
 
-import { FaPlus, FaMinus } from 'react-icons/fa'
-import AboutCard from '../../components/Card/AboutCard/AboutCard'
+import "../Faq/Faq.css";
+import aboutImageFour from "../../assets/Images/img_01-9.jpg";
+import aboutImageFive from "../../assets/Images/img_01-2-768x680.jpg";
+
+import { FaPlus, FaMinus } from "react-icons/fa";
+import AboutCard from "../../components/Card/AboutCard/AboutCard";
 
 const Faq = () => {
   return (
     <>
       <Header />
       <div className="faq-section">
-        <Banner />
+        <Banner page="Faq" />
         <div className="faq-section-one">
           <div>
             <div className="about-printing-intro printing-intro">
@@ -81,8 +83,8 @@ const Faq = () => {
                 <div>
                   <input type="email" placeholder="Enter Email Address" />
                 </div>
-                <textarea placeholder='Message'></textarea>
-                <button className='faq-section-btn'>Send Message</button>
+                <textarea placeholder="Message"></textarea>
+                <button className="faq-section-btn">Send Message</button>
               </form>
             </div>
           </div>
@@ -144,7 +146,7 @@ const Faq = () => {
       </div>
       <Footer />
     </>
-  )
-}
+  );
+};
 
-export default Faq
+export default Loading(Faq);
