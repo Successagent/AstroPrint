@@ -27,11 +27,12 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 
+  --bg-blue: #1a1e5d;
   --primary-blue: #353cc1;
   --primary-red: #fa0213;
   --secondary-blue: #4f56f7;
-  --main-font: 'Rubik', sans-serif;
-  --sub-font: 'Pacifico', cursive;
+  --main-font: "Rubik", sans-serif;
+  --sub-font: "Pacifico", cursive;
 }
 
 img {
@@ -241,8 +242,6 @@ button {
   border-radius: 50%;
 }
 
-
-
 @media (max-width: 375px) {
   footer {
     padding: 15px;
@@ -306,5 +305,4 @@ button {
     align-items: flex-start;
     padding: 30px 20px;
   }
-
 }

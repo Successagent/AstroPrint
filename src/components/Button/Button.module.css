@@ -30,7 +30,7 @@
   position: absolute;
   width: 102%;
   height: 100%;
-  background: #000;
+  background: #2edb5a;
   z-index: 0;
 }
 
@@ -41,7 +41,7 @@
   animation: slideOut 200ms both;
 }
 .button:hover {
-  color: #fff;
+  /* color: #fff; */
 }
 .button:hover::before {
   animation: slideIn 200ms both;

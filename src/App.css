@@ -76,17 +76,20 @@
   text-align: center;
 }
 
-@media screen and (max-width: 768px) {
-  .sect {
-    padding: 20px;
-    width: 100%;
-    margin: 0;
-  }
+@media screen and (max-width: 1068px) {
   .sect--row {
     flex-direction: column;
   }
   .sect--row-reverse {
     flex-direction: column-reverse;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .sect {
+    padding: 20px;
+    width: 100%;
+    margin: 0;
   }
 
   .sect__header {

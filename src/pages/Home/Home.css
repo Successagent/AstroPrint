@@ -1,7 +1,7 @@
 .hero {
   display: flex;
   min-height: 130vh;
-  background: #1a1e5d;
+  background: var(--bg-blue);
   width: 100%;
 }
 
@@ -149,6 +149,22 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-gap: 2em;
+}
+
+@media screen and (max-width: 1068px) {
+  .hero__text {
+    /* text-align: center;
+    padding-left: 0;
+    align-items: center; */
+  }
+  .hero__text h1 {
+    font-size: 5rem;
+  }
+  .showGrid {
+    grid-template-areas:
+      "row2 row2"
+      "row1 row3";
+  }
 }
 
 @media screen and (max-width: 768px) {

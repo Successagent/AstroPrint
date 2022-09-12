@@ -9,11 +9,17 @@
   background: #fff;
 }
 
-.sticky {
-  position: sticky;
+.stickyHeader {
+  position: fixed;
   top: 0;
   left: 0;
+  right: 0;
+  /* background-color: var(--bg-blue); */
   animation: fadeIn 500ms;
+}
+
+.stickyHeader .link {
+  /* color: #fff; */
 }
 
 @keyframes fadeIn {
@@ -49,9 +55,20 @@
   display: flex;
   gap: 10px;
 }
+.menuBtn {
+  display: none;
+  border: none;
+  background-color: transparent;
+}
 
 @media screen and (max-width: 768px) {
   .links {
     display: none;
+  }
+  .buttonSet {
+    display: none;
+  }
+  .menuBtn {
+    display: block;
   }
 }
