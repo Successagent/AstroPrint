@@ -1,4 +1,5 @@
-.contact-section-one {
+.contact-section-one,
+.contact-section-two {
   display: flex;
   padding: 130px 150px;
   align-items: center;
@@ -6,6 +7,11 @@
   text-align: center;
   background-color: white;
   gap: 30px;
+  padding-top: 0px;
+}
+
+.contact-section-one {
+  padding-top: 130px;
 }
 
 .contact-section-one > div {
@@ -31,6 +37,11 @@
   border-radius: 50%;
 }
 
+.contact-form input::placeholder {
+  font-size: 13px;
+  font-weight: 700;
+}
+
 .contact-section-one .h3 {
   font-size: 22px;
   color: #222244;
@@ -44,9 +55,98 @@
   margin: 0px auto;
 }
 
+.contact-section-two {
+  flex-direction: column;
+  gap: 20px;
+  padding: 130px 120px;
+}
+
+.contact-form {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  width: 100%;
+  /* background-color: ; */
+  align-items: flex-start;
+  justify-content: center;
+  grid-template-areas:
+    'header header2 header3'
+    'textarea textarea textarea'
+    '. button .';
+  justify-content: center;
+}
+
+.contact-form > div {
+  display: flex;
+  align-items: center;
+  padding: 30px;
+}
+
+.contact-form > div:nth-child(1) {
+  grid-area: header;
+}
+
+.contact-form > div:nth-child(2) {
+  grid-area: header2;
+}
+
+.contact-form > div:nth-child(3) {
+  grid-area: header3;
+}
+
+.contact-form textarea {
+  grid-area: textarea;
+  height: 350px;
+  align-self: flex-start;
+}
+
+.contact-form textarea::placeholder {
+  padding-left: 20px;
+  padding-top: 20px;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.contact-form button {
+  grid-area: button;
+}
+
+.contact-form > div,
+.contact-form input,
+.contact-form textarea {
+  background-color: #f0f0f0;
+  border: none;
+}
+
+.contact-section-three {
+  background-color: var(--primary-red);
+  height: 600px;
+}
+
 @media (max-width: 375px) {
-    .contact-section-one {
-        flex-direction: column;
-        padding: 100px 20px;
-    }
+  .contact-section-one,
+  .contact-section-two {
+    flex-direction: column;
+    padding: 100px 20px;
+  }
+
+  .contact-section-two {
+    padding-top: 0px;
+  }
+
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .contact-form > div {
+    width: 100%;
+    height: 40px;
+  }
+
+  .contact-form textarea {
+    width: 100%;
+    height: 300px;
+  }
 }
