@@ -2,6 +2,7 @@ import React from 'react'
 
 import Banner from '../../components/Banner'
 import Header from '../../components/Header'
+import Footer from "../../components/Footer"
 
 
 import { FaMapMarkedAlt } from 'react-icons/fa'
@@ -12,7 +13,7 @@ import "../About/About.css"
 const Contact = () => {
   return (
     <>
-      {/* <Header /> */}
+      <Header />
       <div className="Contact-section">
         <Banner />
         <div className="contact-section-one">

@@ -13,7 +13,7 @@ import AboutCard from '../../components/Card/AboutCard/AboutCard'
 const Faq = () => {
   return (
     <>
-      {/* <Header /> */}
+      <Header />
       <div className="faq-section">
         <Banner />
         <div className="faq-section-one">
