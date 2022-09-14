@@ -19,9 +19,6 @@
   animation: fadeIn 500ms;
 }
 
-.stickyHeader .link {
-  /* color: #fff; */
-}
 
 @keyframes fadeIn {
   0% {

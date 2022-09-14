@@ -190,6 +190,10 @@
       '. . button button';
   }
 
+  .contact-form >div {
+    height: 70px;
+  }
+
   .contact-form > div:nth-child(1) {
     grid-area: header;
   }
