@@ -31,8 +31,8 @@
   --primary-blue: #353cc1;
   --primary-red: #fa0213;
   --secondary-blue: #4f56f7;
-  --main-font: "Rubik", sans-serif;
-  --sub-font: "Pacifico", cursive;
+  --main-font: 'Rubik', sans-serif;
+  --sub-font: 'Pacifico', cursive;
 }
 
 img {
@@ -242,7 +242,7 @@ button {
   border-radius: 50%;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 600px) {
   footer {
     padding: 15px;
   }
@@ -304,5 +304,56 @@ button {
     height: 130px;
     align-items: flex-start;
     padding: 30px 20px;
+  }
+}
+
+@media (max-width: 1000px) and (min-width: 601px) {
+  .footer {
+    padding: 30px 20px;
+    padding-bottom: 50px;
+  }
+
+  .footer-item-two {
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      'header header1'
+      'footer footer1';
+    gap: 30px;
+  }
+
+  .footer-item-two > div,
+  .footer-item-two > ul {
+    width: 100%;
+    margin: 0px;
+    height: 300px;
+  }
+
+
+
+  .footer-recent-news-sec {
+    margin-top: 50px;
+  }
+
+  .footer-last-item {
+    width: 100%;
+  }
+
+  .footer-item-two .h3 {
+  }
+
+  .footer-calendar-sec {
+    margin-top: 20px;
+  }
+
+  .hide-content {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) and (min-width: 601px) {
+  .footer-item-two {
+    grid-template-columns: 1fr;
   }
 }

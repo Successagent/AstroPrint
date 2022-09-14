@@ -1,5 +1,5 @@
 import React from 'react'
-import { GoogleMap, Marker } from "react-google-maps"
+
 import Banner from '../../components/Banner'
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
@@ -10,6 +10,7 @@ import { FaMapMarkedAlt } from 'react-icons/fa'
 
 import '../Contact/Contact.css'
 import '../About/About.css'
+import Map from '../../components/Map/Map'
 
 const Contact = () => {
   return (
@@ -64,14 +65,7 @@ const Contact = () => {
           </form>
         </div>
         <div className="contact-section-three">
-          <GoogleMap
-            defaultZoom={8}
-            defaultCenter={{ lat: -34.397, lng: 150.644 }}
-          >
-            {true && (
-              <Marker position={{ lat: -34.397, lng: 150.644 }} />
-            )}
-          </GoogleMap>
+        <Map/>
         </div>
       </div>
       <Footer />

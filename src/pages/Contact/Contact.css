@@ -126,7 +126,7 @@
   padding: 20px;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 600px) {
   .contact-section-one,
   .contact-section-two {
     flex-direction: column;

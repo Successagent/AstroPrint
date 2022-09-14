@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "google-maps-react": "^2.0.6",
     "leaflet": "^1.8.0",
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
@@ -19,7 +20,8 @@
     "react-intersection-observer": "^9.4.0",
     "react-leaflet": "^4.0.2",
     "react-on-images-loaded": "^2.2.8",
-    "react-router-dom": "6"
+    "react-router-dom": "6",
+    "recompose": "^0.30.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.17",

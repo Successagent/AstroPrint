@@ -18,7 +18,7 @@ import Banner from "../../components/Banner";
 function About() {
   return (
     <>
-      <Header />
+      {/* <Header /> */}
       <div className="about-section">
         <Banner />
         <div className="sect sect--row">
@@ -173,7 +173,7 @@ function About() {
           <ReviewsCard />
         </div>
       </div>
-      <Footer />
+      <Footer></Footer>
     </>
   );
 }

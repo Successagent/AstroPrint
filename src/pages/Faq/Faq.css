@@ -83,7 +83,7 @@
   text-transform: uppercase;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 600px) {
   .faq-section-one {
     flex-direction: column;
     padding: 0;

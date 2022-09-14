@@ -31,7 +31,7 @@ const Footer = () => {
           <img src={footerLogoTwo} alt="" />
           <img className='hide' src={footerLogoThree} alt="" />
           <img className='hide' src={footerLogoFour} alt="" />
-          <img className='hide' src={footerLogoFive} alt="" />
+          <img className='hide hide-content' src={footerLogoFive} alt="" />
         </div>
       </div>
       <div className="footer-item-two">

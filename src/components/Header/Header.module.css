@@ -59,6 +59,7 @@
 .menuBtn {
   display: none;
   border: none;
+  color: black;
   background-color: transparent;
 }
 

@@ -196,7 +196,7 @@
   font-weight: 400;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 600px) {
   .service-sec-one,
   .service-section-three,
   .service-section-four {
