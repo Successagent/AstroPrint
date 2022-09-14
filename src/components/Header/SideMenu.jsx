@@ -49,6 +49,16 @@ function SideMenu({ isOpen, setIsOpen }) {
               <p>Services</p>
             </li>
           </Link>
+          <Link to={"/contact"}>
+            <li className={SideMenuStyles.link}>
+              <p>Contact</p>
+            </li>
+          </Link>
+          <Link to={"/faq"}>
+            <li className={SideMenuStyles.link}>
+              <p>FAQ</p>
+            </li>
+          </Link>
         </ul>
 
         <div className={SideMenuStyles.buttonSet}>

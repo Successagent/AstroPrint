@@ -31,8 +31,8 @@
   --primary-blue: #353cc1;
   --primary-red: #fa0213;
   --secondary-blue: #4f56f7;
-  --main-font: 'Rubik', sans-serif;
-  --sub-font: 'Pacifico', cursive;
+  --main-font: "Rubik", sans-serif;
+  --sub-font: "Pacifico", cursive;
 }
 
 img {
@@ -52,6 +52,7 @@ body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
+  background-color: white;
   font-family: var(--main-font);
 }
 
@@ -318,8 +319,8 @@ button {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas:
-      'header header1'
-      'footer footer1';
+      "header header1"
+      "footer footer1";
     gap: 30px;
   }
 
@@ -329,8 +330,6 @@ button {
     margin: 0px;
     height: 300px;
   }
-
-
 
   .footer-recent-news-sec {
     margin-top: 50px;
