@@ -1,16 +1,16 @@
-import React from "react";
+import React from 'react'
 
-import Banner from "../../components/Banner";
-import Header from "../../components/Header";
-import Footer from "../../components/Footer";
+import Banner from '../../components/Banner'
+import Header from '../../components/Header'
+import Footer from '../../components/Footer'
 
-import Loading from "../../components/HOCs/Loading";
+import Loading from '../../components/HOCs/Loading'
 
-import { FaMapMarkedAlt } from "react-icons/fa";
+import { FaMapMarkedAlt } from 'react-icons/fa'
 
-import "../Contact/Contact.css";
-import "../About/About.css";
-import Map from "../../components/Map/Map";
+import '../Contact/Contact.css'
+import '../About/About.css'
+import Map from '../../components/Map/Map'
 
 const Contact = () => {
   return (
@@ -51,27 +51,24 @@ const Contact = () => {
           <h4 className="h4">Contact Us</h4>
           <h2 className="h2">Get In touch</h2>
           <form className="contact-form">
-            <label>
+            <div>
               <input type="text" placeholder="Write Your Name" />
-            </label>
-
-            <label>
+            </div>
+            <div>
               <input type="phone" placeholder="Write Your Phone Number" />
-            </label>
-            <label>
+            </div>
+            <div>
               <input type="email" placeholder="Write Your Email" />
-            </label>
+            </div>
             <textarea placeholder="Write Your Message"></textarea>
             <button className="faq-section-btn">Send Message</button>
           </form>
         </div>
-        <div className="contact-section-three">
-          {/* <Map /> */}
-        </div>
+        <div className="contact-section-three">{/* <Map /> */}</div>
       </div>
       <Footer />
     </>
-  );
-};
+  )
+}
 
-export default Loading(Contact);
+export default Loading(Contact)
