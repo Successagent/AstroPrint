@@ -18,7 +18,7 @@ import Banner from "../../components/Banner";
 function About() {
   return (
     <>
-      {/* <Header /> */}
+      <Header />
       <div className="about-section">
         <Banner />
         <div className="sect sect--row">
@@ -150,7 +150,7 @@ function About() {
                   </div>
                   <div className="about-branding-design-con">
                     <div>
-                      <h3 className="h3">Printing & Branding</h3>
+                      <h3 className="h3">Printing & Design</h3>
                       <h5 className="h5">
                         Sed ut perspiciatis unde omnis natus error sit
                         voluptatem

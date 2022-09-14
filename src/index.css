@@ -242,7 +242,7 @@ button {
   border-radius: 50%;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 500px) {
   footer {
     padding: 15px;
   }

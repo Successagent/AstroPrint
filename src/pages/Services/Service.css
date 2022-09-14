@@ -196,7 +196,7 @@
   font-weight: 400;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 500px) {
   .service-sec-one,
   .service-section-three,
   .service-section-four {
@@ -234,5 +234,28 @@
 
   .service-section-four > div {
     width: 100%;
+  }
+}
+
+@media (max-width: 920px) and (min-width: 501px) {
+  .service-sec-one {
+    padding: 50px 30px;
+    flex-direction: column;
+    gap: 50px;
+  }
+  .service-sec-one-item-one {
+    width: 100%;
+  }
+
+  .service-sec-one-item-two {
+    width: 100%;
+  }
+
+  .service-sec-two-icons-con{
+    width: 100px;
+  }
+
+  .service-section-three {
+    padding: 50px 20px;
   }
 }

@@ -145,7 +145,6 @@ img {
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
-
 .about-card > div div:nth-child(2) {
   background-image: url(../../assets/Images/bg_icon.png);
   background-color: rgba(255, 255, 255, 0.97);
@@ -364,7 +363,7 @@ img {
   color: red;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 500px) {
   .h2 {
     font-size: 30px;
     line-height: 2.5rem;
@@ -509,3 +508,54 @@ img {
   }
 }
 
+@media (max-width: 920px) and (min-width: 501px) {
+  .about-section-three,
+  .about-section-four {
+    padding: 100px 50px;
+  }
+
+  .about-section-three .h2,
+  .about-section-four .h2,
+  .about-section-six .h2 {
+    width: 100%;
+  }
+
+  .about-card {
+    display: grid !important;
+    grid-template-columns: repeat(4, 1fr);
+    grid-row-gap: 100px;
+    grid-template-areas:
+      'header1 header1 header2 header2'
+      '. footer footer .';
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about-card > div:nth-child(1) {
+    grid-area: header1;
+  }
+
+  .about-card > div:nth-child(2) {
+    grid-area: header2;
+  }
+
+  .about-card > div:nth-child(3) {
+    grid-area: footer;
+  }
+
+  .about-section-five-part-one > div:nth-child(2) {
+    padding: 50px 20px;
+  }
+
+ .about-section .printing-intro{
+    width: 100%;
+  }
+
+  
+.about-section-five-part-two > div:nth-child(1) {
+  background-color: var(--primary-red);
+  padding: 50px 0;
+  padding-left: 20px;
+  padding-right: 50px;
+}
+}
