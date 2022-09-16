@@ -84,7 +84,7 @@ const Faq = () => {
                   <input type="email" placeholder="Enter Email Address" />
                 </div>
                 <textarea placeholder="Message"></textarea>
-                <button className="faq-section-btn">Send Message</button>
+                <button className="faq-section-btn service-btn">Send Message</button>
               </form>
             </div>
           </div>

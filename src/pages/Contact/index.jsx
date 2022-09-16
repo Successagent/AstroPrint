@@ -61,7 +61,7 @@ const Contact = () => {
               <input type="email" placeholder="Write Your Email" />
             </div>
             <textarea placeholder="Write Your Message"></textarea>
-            <button className="faq-section-btn">Send Message</button>
+            <button className="faq-section-btn service-btn">Send Message</button>
           </form>
         </div>
         <div className="contact-section-three">{/* <Map /> */}</div>

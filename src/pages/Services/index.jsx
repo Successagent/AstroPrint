@@ -38,7 +38,7 @@ function Services() {
               Do Do Sed ut perspiciatis unde omnis iste natus error sit
               voluptatem accusantium doloremque laudan
             </h5>
-            <button>
+            <button className="service-btn">
               DISCOVER MORE
               <div className="section-icon">
                 <FiArrowRight></FiArrowRight>
@@ -153,7 +153,7 @@ function Services() {
                 Smashing Podcast Episode 19 With Andy Bell What Is CUBE ?
               </p>
             </div>
-            <button>
+            <button className="service-btn">
               Meet with us
               <div className="section-icon">
                 <FiArrowRight></FiArrowRight>

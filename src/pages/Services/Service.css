@@ -28,9 +28,7 @@
   color: black;
 }
 
-.service-sec-one-item-one button,
-.service-section-three button,
-.faq-section-btn {
+.service-btn{
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -41,7 +39,26 @@
   font-size: 13px;
   padding: 0 40px;
   padding-right: 10px;
+  position: relative;
+  z-index: 1;
 }
+
+.service-btn::after{
+  content: "";
+  position:absolute;
+  inset: 0;
+  background-color: #2edb5a;
+  z-index: -1;
+  transform: scale(0);
+  transform-origin: bottom right;
+  transition: transform 200ms ease;
+}
+
+.service-btn:hover::after{
+  transform: scale(1);
+  transform-origin: top left;
+}
+
 
 .section-icon {
   background-color: white;
@@ -142,6 +159,7 @@
   text-transform: uppercase;
   margin-top: 35px;
 }
+
 
 .service-sec-checkmark {
   font-size: 20px;
