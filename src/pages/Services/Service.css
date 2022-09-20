@@ -7,9 +7,20 @@
 .service-sec-one {
   display: flex;
   align-items: center;
-  padding: 100px 130px;
+  padding: 100px 80px;
   background-color: #f5f6fa;
 }
+/* 
+.boxes {
+  transform: translateY(30px);
+  transition: all 0.7s ease-in-out;
+  opacity: 0;
+} */
+
+/* .slideup{
+  opacity: 1;
+  transform: translateY(0px);
+} */
 
 .service-sec-one-item-one {
   width: 35%;
