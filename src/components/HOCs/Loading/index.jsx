@@ -1,14 +1,21 @@
 import React, { useEffect, useState } from "react";
+import { useLocation } from "react-router-dom";
+
 import OnImagesLoaded from "react-on-images-loaded";
 import LoadingStyles from "./Loading.module.css";
 
 function Loading(Page) {
   const HOC = () => {
     const [isLoading, setIsLoading] = useState(true);
+    const { pathname } = useLocation();
 
     const hideLoader = () => {
       setIsLoading(false);
     };
+
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, [pathname]);
 
     // useEffect(() => {
     //   setTimeout(hideLoader, 5000);
