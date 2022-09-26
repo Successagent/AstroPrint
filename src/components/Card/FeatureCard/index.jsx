@@ -10,7 +10,7 @@ function FeatureCard({ title, body, target, bgColor }) {
     "Sed ut perspiciat unde omnis iste natus error sit voluptatem accusantium system";
   target = target || "about";
   target = "/" + target;
-  bgColor = bgColor || "#003d99";
+  bgColor = bgColor || "#6100da";
 
   return (
     <div className={FeatureCardStyles.container}>
