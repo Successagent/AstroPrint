@@ -10,7 +10,7 @@ function FeatureCard({ title, body, target, bgColor }) {
     "Sed ut perspiciat unde omnis iste natus error sit voluptatem accusantium system";
   target = target || "about";
   target = "/" + target;
-  bgColor = bgColor || "#490";
+  bgColor = bgColor || "#003d99";
 
   return (
     <div className={FeatureCardStyles.container}>
@@ -18,7 +18,7 @@ function FeatureCard({ title, body, target, bgColor }) {
         className={FeatureCardStyles.icon}
         style={{ backgroundColor: bgColor }}
       >
-        <AiOutlinePrinter size={30} />
+        <AiOutlinePrinter size={30} color="#fff" />
       </div>
       <div className={FeatureCardStyles.text}>
         <h3 className={FeatureCardStyles.title}>{title} </h3>

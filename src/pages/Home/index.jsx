@@ -4,6 +4,7 @@ import mockupImg from "../../assets/mockupImg.png";
 import heroImg from "../../assets/hero_img.jpg";
 import featuresImg from "../../assets/featuresImg.jpg";
 import xpImg from "../../assets/25years.png";
+
 import serviceImg from "../../assets/serviceImg.jpg";
 
 import Loading from "../../components/HOCs/Loading";

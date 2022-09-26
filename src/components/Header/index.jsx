@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
+import logo from "../../assets/ASTRO LOGO Solo.svg";
 import { useInView } from "react-intersection-observer";
 import { Link } from "react-router-dom";
 import { AiOutlineMenu } from "react-icons/ai";
@@ -8,7 +9,9 @@ import { Button, SmallButton } from "../Button";
 const HeaderContent = ({ setIsSideMenuOpen }) => {
   return (
     <>
-      <div className={HeaderStyles.logo}>Astro</div>
+      <div className={HeaderStyles.logo}>
+        <img src={logo} alt="astrosoft" width="50" />
+      </div>
 
       <ul className={HeaderStyles.links}>
         <Link to={"/"}>
