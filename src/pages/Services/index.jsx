@@ -1,14 +1,14 @@
-import React, { useState } from "react";
-import Loading from "../../components/HOCs/Loading";
+import React, { useState } from 'react'
+import Loading from '../../components/HOCs/Loading'
 
-import AboutCard from "../../components/Card/AboutCard/AboutCard";
-import ReviewsCard from "../../components/Card/ReviewsCard/ReviewsCard";
-import Footer from "../../components/Footer/Footer";
-import Header from "../../components/Header";
-import Counter from "../../components/Counter";
-import serviceLogoOne from "../../assets/Images/img_02-3.png";
+import AboutCard from '../../components/Card/AboutCard/AboutCard'
+import ReviewsCard from '../../components/Card/ReviewsCard/ReviewsCard'
+import Footer from '../../components/Footer/Footer'
+import Header from '../../components/Header'
+import Counter from '../../components/Counter'
+import serviceLogoOne from '../../assets/Images/img_02-3.png'
 
-import { FaCube, FaLaptopCode, FaTrophy } from "react-icons/fa";
+import { FaCube, FaLaptopCode, FaTrophy } from 'react-icons/fa'
 import {
   FiArrowRight,
   FiCheck,
@@ -16,15 +16,17 @@ import {
   FiSettings,
   FiHeart,
   FiTruck,
-} from "react-icons/fi";
+} from 'react-icons/fi'
 
-import { Button, SmallButton } from "../../components/Button";
+import { Button, SmallButton } from '../../components/Button'
 
-import "../Services/Service.css";
-import "../About/About.css";
-import Banner from "../../components/Banner";
+import '../Services/Service.css'
+import '../About/About.css'
+import Banner from '../../components/Banner'
 
 function Services() {
+  
+
   return (
     <>
       <Header />
@@ -32,13 +34,15 @@ function Services() {
         <Banner page="Services" />
         <div className="service-sec-one">
           <div className="service-sec-one-item-one">
-            <h4 className="h4">Our Core Features</h4>
-            <h2 className="h2">Explore Every Features</h2>
-            <h5 className="h5">
+            <div className="">
+              <h4 className="h4">Our Core Features</h4>
+              <h2 className="h2">Explore Every Features</h2>
+            </div>
+            <h5 className="h5 ">
               Do Do Sed ut perspiciatis unde omnis iste natus error sit
               voluptatem accusantium doloremque laudan
             </h5>
-            <button className="service-btn">
+            <button className="service-btn ">
               DISCOVER MORE
               <div className="section-icon">
                 <FiArrowRight></FiArrowRight>
@@ -49,7 +53,7 @@ function Services() {
             <div>
               <div
                 className="service-sec-two-icons-con"
-                style={{ backgroundColor: "#FEC931" }}
+                style={{ backgroundColor: '#FEC931' }}
               >
                 <FiPrinter></FiPrinter>
               </div>
@@ -66,7 +70,7 @@ function Services() {
             <div>
               <div
                 className="service-sec-two-icons-con"
-                style={{ backgroundColor: "#1A1E5D" }}
+                style={{ backgroundColor: '#1A1E5D' }}
               >
                 <FaCube></FaCube>
               </div>
@@ -97,7 +101,7 @@ function Services() {
             <div>
               <div
                 className="service-sec-two-icons-con"
-                style={{ backgroundColor: "#767676" }}
+                style={{ backgroundColor: '#767676' }}
               >
                 <FiSettings></FiSettings>
               </div>
@@ -126,7 +130,7 @@ function Services() {
           <div>
             <img src={serviceLogoOne} alt="" />
           </div>
-          <div className="service-section-three-part-two">
+          <div className="service-section-three-part-two ">
             <h4 className="h4">Needs Any Helps</h4>
             <h2 className="h2">Always Ready To Print Your Dream Works</h2>
             <h5 className="h5">
@@ -164,7 +168,7 @@ function Services() {
         <div className="service-section-four">
           <div>
             <div>
-              <div style={{ backgroundColor: "#FA0213" }}>
+              <div style={{ backgroundColor: '#FA0213' }}>
                 <FiHeart></FiHeart>
               </div>
             </div>
@@ -175,7 +179,7 @@ function Services() {
           </div>
           <div>
             <div>
-              <div style={{ backgroundColor: "#209FFA" }}>
+              <div style={{ backgroundColor: '#209FFA' }}>
                 <FaTrophy></FaTrophy>
               </div>
             </div>
@@ -186,7 +190,7 @@ function Services() {
           </div>
           <div>
             <div>
-              <div style={{ backgroundColor: "#FEC931" }}>
+              <div style={{ backgroundColor: '#FEC931' }}>
                 <FiTruck></FiTruck>
               </div>
             </div>
@@ -198,7 +202,7 @@ function Services() {
           </div>
           <div>
             <div>
-              <div style={{ backgroundColor: "#5F43C5" }}>
+              <div style={{ backgroundColor: '#5F43C5' }}>
                 <FaLaptopCode></FaLaptopCode>
               </div>
             </div>
@@ -218,7 +222,7 @@ function Services() {
       </div>
       <Footer />
     </>
-  );
+  )
 }
 
-export default Loading(Services);
+export default Loading(Services)

@@ -1,21 +1,35 @@
-import React, { useState } from "react";
-import Header from "../../components/Header";
-import "../About/About.css";
-import Loading from "../../components/HOCs/Loading";
-import { FaMinus, FaPlus } from "react-icons/fa";
+import React, { useEffect, useRef } from 'react'
+import Header from '../../components/Header'
+import '../About/About.css'
+import Loading from '../../components/HOCs/Loading'
+import { FaMinus, FaPlus } from 'react-icons/fa'
 
-import aboutImageOne from "../../assets/Images/img_01.png";
-import aboutImageTwo from "../../assets/Images/reward.png";
-import aboutImageThree from "../../assets/Images/iso.png";
-import aboutImageFour from "../../assets/Images/img_01-9.jpg";
-import aboutImageFive from "../../assets/Images/img_01-2-768x680.jpg";
-import AboutCard from "../../components/Card/AboutCard/AboutCard";
-import MemberCard from "../../components/Card/MemberCard";
-import ReviewsCard from "../../components/Card/ReviewsCard/ReviewsCard";
-import Footer from "../../components/Footer";
-import Banner from "../../components/Banner";
+import aboutImageOne from '../../assets/Images/img_01.png'
+import aboutImageTwo from '../../assets/Images/reward.png'
+import aboutImageThree from '../../assets/Images/iso.png'
+import aboutImageFour from '../../assets/Images/img_01-9.jpg'
+import aboutImageFive from '../../assets/Images/img_01-2-768x680.jpg'
+import AboutCard from '../../components/Card/AboutCard/AboutCard'
+import MemberCard from '../../components/Card/MemberCard'
+import ReviewsCard from '../../components/Card/ReviewsCard/ReviewsCard'
+import Footer from '../../components/Footer'
+import Banner from '../../components/Banner'
 
 function About() {
+  window.addEventListener('click', showContent)
+
+  function showContent() {
+    const ref = useRef(null)
+    useEffect(() => {
+      console.log('className 👉️', ref.current.className)
+      if (ref.current.classList.contains('boxes')) {
+        console.log('Element contains class')
+      } else {
+        console.log('Element does NOT contain class')
+      }
+    }, [])
+  }
+
   return (
     <>
       <Header />
@@ -26,7 +40,7 @@ function About() {
             <img src={aboutImageOne} alt="" />
           </div>
           <div>
-            <div>
+            <div className="boxes">
               <h4 className="h4">About Our Company</h4>
               <h1 className="h2">Printing Your Dream Works With Printem</h1>
             </div>
@@ -175,7 +189,7 @@ function About() {
       </div>
       <Footer></Footer>
     </>
-  );
+  )
 }
 
-export default Loading(About);
+export default Loading(About)
