@@ -3,6 +3,11 @@
   gap: 10px;
   width: 300px;
 }
+@media screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+}
 .icon {
   --size: 60px;
   height: var(--size);

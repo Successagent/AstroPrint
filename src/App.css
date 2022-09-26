@@ -101,4 +101,8 @@
   .sect__sub_header {
     text-align: center;
   }
+  .sect__text--row {
+    flex-direction: column;
+    gap: 10px;
+  }
 }

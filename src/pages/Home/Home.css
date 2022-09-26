@@ -144,7 +144,7 @@
 .wrap-image {
   width: 400px;
   height: 140px;
-  background: #000;
+  object-fit: contain;
   shape-outside: margin-box;
 }
 
@@ -179,6 +179,7 @@
     text-align: center;
     padding-left: 0;
     align-items: center;
+    margin-top: -30px;
   }
   .hero__text h1 {
     font-size: 3rem;
@@ -188,6 +189,7 @@
   }
 
   .showGrid {
+    padding: 0;
     grid-template-areas:
       "row2"
       "row1"
@@ -195,12 +197,13 @@
   }
 
   .work_grid {
-    width: 100%;
+    width: 92%;
     height: 768px;
     display: grid;
     grid-template-areas:
       "large large"
       "med med"
-      "small1 small2";
+      "small1 small1"
+      "small2 small2";
   }
 }
