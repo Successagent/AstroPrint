@@ -61,7 +61,6 @@ function Home() {
           <div className="sect__text">
             <div className="sect__text--row">
               <img className="wrap-image" src={xpImg} alt="" />
-              {/* <div className="wrap-image"></div> */}
               <p>
                 Sed ut perspiciatis unde omnis iste natus error sit voluptatem
                 accusantiu dolorem laudantium, totam rem aper iam eaque ipsa
@@ -80,7 +79,6 @@ function Home() {
               </p>
             </div>
           </div>
-          {/* TODO: Add the quote from the template */}
         </div>
       </section>
       <section className="sect">
@@ -132,7 +130,6 @@ function Home() {
         <div className="sect__text">
           <h3 className="sect__sub_header">What we Do</h3>
           <h2 className="sect__header">Why people choose AstroPrint</h2>
-          {/* TODO: Enlarge first letter */}
           <p>
             Sed ut perspiciatis unde omnis iste natus erroluptatem accusantium
             doloremque laudantium, totam rem aeaque ipsa quae ab illo inventore
@@ -175,7 +172,6 @@ function Home() {
       <section className="sect">
         <h3 className="sect__sub_header">Latest News & blog</h3>
         <h2 className="sect__header">Get More Updates for news & articles</h2>
-        {/* <h2 className="sect__header--bg">Blog</h2> */}
         <div className="blog_list">
           <BlogCard />
           <BlogCard />
