@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 import {
   FaCalendar,
   FaPhone,
@@ -29,30 +30,23 @@ const Footer = () => {
         </div>
         <div className="footer-item-one-items">
           <img src={footerLogoTwo} alt="" />
-          <img className='hide' src={footerLogoThree} alt="" />
-          <img className='hide' src={footerLogoFour} alt="" />
-          <img className='hide hide-content' src={footerLogoFive} alt="" />
+          <img className="hide" src={footerLogoThree} alt="" />
+          <img className="hide" src={footerLogoFour} alt="" />
+          <img className="hide hide-content" src={footerLogoFive} alt="" />
         </div>
       </div>
       <div className="footer-item-two">
         <ul>
           <h3 className="h3">Quick Links.</h3>
-          <li className="h5">Portfolio Details</li>
-          <li className="h5">Portfolio Masonry</li>
-          <li className="h5">Portfolio Metro</li>
-          <li className="h5">Portfolio Details</li>
-          <li className="h5">Our Pricing</li>
-          <li className="h5">Portfolio Metro</li>
+          <li className="h5">
+            <Link to="/services" />
+            Services
+          </li>
+          <li className="h5">About</li>
+          <li className="h5">Contact</li>
+          <li className="h5">Faq</li>
         </ul>
-        <ul>
-          <h3 className="h3">Our Services.</h3>
-          <li className="h5">Our Pricing</li>
-          <li className="h5">Portfolio Masonry</li>
-          <li className="h5">Portfolio Metro</li>
-          <li className="h5">Portfolio Details</li>
-          <li className="h5">Our Pricing</li>
-          <li className="h5">Portfolio Details</li>
-        </ul>
+
         <div className="footer-recent-news-sec">
           <h3 className="h3">Recent News.</h3>
           <div className="footer-calendar-sec">
@@ -98,9 +92,9 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className='footer-last-item'>
+      <div className="footer-last-item">
         <p className="p">Copyright ©2022 BDevs. All Rights Reserved</p>
-        <div className='footer-last-item-child-two'>
+        <div className="footer-last-item-child-two">
           <div>
             <FaFacebookF></FaFacebookF>
           </div>
