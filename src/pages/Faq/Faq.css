@@ -13,8 +13,19 @@
 .about-printing-intro .h3 {
   font-size: 16px;
   color: black;
+  height: 100%;
+}
+.faq-section-one .h5 {
+  opacity: 0;
+  transition: all 300ms ease-in-out;
+  height: 0px;
 }
 
+.increase-height {
+  height: 100px !important;
+  opacity: 1 !important;
+  transition: all 300ms ease-in-out;
+}
 .faq-section-one {
   display: flex;
   padding: 100px 130px;

@@ -39,12 +39,17 @@ const Footer = () => {
         <ul>
           <h3 className="h3">Quick Links.</h3>
           <li className="h5">
-            <Link to="/services" />
-            Services
+            <Link to="/services">Services</Link>
           </li>
-          <li className="h5">About</li>
-          <li className="h5">Contact</li>
-          <li className="h5">Faq</li>
+          <li className="h5">
+            <Link to="/about">About</Link>
+          </li>
+          <li className="h5">
+            <Link to="/contact">Contact</Link>
+          </li>
+          <li className="h5">
+            <Link to="/faq">Faq</Link>
+          </li>
         </ul>
 
         <div className="footer-recent-news-sec">

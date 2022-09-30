@@ -1,18 +1,21 @@
-import React from "react";
-import Banner from "../../components/Banner";
-import Footer from "../../components/Footer/Footer";
-import Header from "../../components/Header";
+import React, { useState } from 'react'
+import Banner from '../../components/Banner'
+import Footer from '../../components/Footer/Footer'
+import Header from '../../components/Header'
 
-import Loading from "../../components/HOCs/Loading";
+import Loading from '../../components/HOCs/Loading'
 
-import "../Faq/Faq.css";
-import aboutImageFour from "../../assets/Images/img_01-9.jpg";
-import aboutImageFive from "../../assets/Images/img_01-2-768x680.jpg";
+import '../Faq/Faq.css'
+import aboutImageFour from '../../assets/Images/img_01-9.jpg'
+import aboutImageFive from '../../assets/Images/img_01-2-768x680.jpg'
 
-import { FaPlus, FaMinus } from "react-icons/fa";
-import AboutCard from "../../components/Card/AboutCard/AboutCard";
+import { FaPlus, FaMinus } from 'react-icons/fa'
+import AboutCard from '../../components/Card/AboutCard/AboutCard'
+
+
 
 const Faq = () => {
+ 
   return (
     <>
       <Header />
@@ -20,51 +23,149 @@ const Faq = () => {
         <Banner page="Faq" />
         <div className="faq-section-one">
           <div>
-            <div className="about-printing-intro printing-intro">
-              <h3 className="h3">What we do for Printing Business</h3>
-              <FaMinus></FaMinus>
+            <div>
+              <div className="about-printing-intro printing-intro">
+                <h3 id="tab-1" className="h3" onClick={toggleActive}>
+                  What we do for Printing Business
+                </h3>
+                <div>
+                  {active === 0 ? (
+                    <FaMinus></FaMinus>
+                  ) : active === 1 ? (
+                    <FaMinus></FaMinus>
+                  ) : (
+                    <FaPlus></FaPlus>
+                  )}
+                </div>
+              </div>
+              <h5
+                className={`h5 ${
+                  active === 0
+                    ? 'increase-height'
+                    : active === 1
+                    ? 'increase-height'
+                    : 'h5'
+                }`}
+              >
+                But I must explain to you how all this mistaken idea of
+                denouncing pleasure and praising pain was born and I will give
+                you a complete account of the system, and expound the actual
+                teachings of the great explorer
+              </h5>
             </div>
-            <h5 className="h5">
-              But I must explain to you how all this mistaken idea of denouncing
-              pleasure and praising pain was born and I will give you a complete
-              account of the system, and expound the actual teachings of the
-              great explorer
-            </h5>
-            <div className="about-printing-intro printing-intro">
-              <h3 className="h3">What we do for Printing Business</h3>
-              <FaMinus></FaMinus>
+            <div>
+              <div className="about-printing-intro printing-intro">
+                <h3 id="tab-2" className="h3" onClick={toggleActive}>
+                  What we do for Printing Business
+                </h3>
+                <div>
+                  {active === 2 ? <FaMinus></FaMinus> : <FaPlus></FaPlus>}
+                </div>
+              </div>
+              <h5 className={`h5 ${active === 2 ? 'increase-height' : 'h5'}`}>
+                But I must explain to you how all this mistaken idea of
+                denouncing pleasure and praising pain was born and I will give
+                you a complete account of the system, and expound the actual
+                teachings of the great explorer
+              </h5>
             </div>
-            <div className="about-printing-intro printing-intro">
-              <h3 className="h3">What we do for Printing Business</h3>
-              <FaMinus></FaMinus>
+            <div>
+              <div className="about-printing-intro printing-intro">
+                <h3 id="tab-3" className="h3" onClick={toggleActive}>
+                  What we do for Printing Business
+                </h3>
+                <div>
+                  {active === 3 ? <FaMinus></FaMinus> : <FaPlus></FaPlus>}
+                </div>
+              </div>
+              <h5 className={`h5 ${active === 3 ? 'increase-height' : 'h5'}`}>
+                But I must explain to you how all this mistaken idea of
+                denouncing pleasure and praising pain was born and I will give
+                you a complete account of the system, and expound the actual
+                teachings of the great explorer
+              </h5>
             </div>
-            <div className="about-printing-intro printing-intro">
-              <h3 className="h3">What we do for Printing Business</h3>
-              <FaMinus></FaMinus>
+            <div>
+              <div className="about-printing-intro printing-intro">
+                <h3 id="tab-4" className="h3" onClick={toggleActive}>
+                  What we do for Printing Business
+                </h3>
+                <div>
+                  {active === 4 ? <FaMinus></FaMinus> : <FaPlus></FaPlus>}
+                </div>
+              </div>
+              <h5 className={`h5 ${active === 4 ? 'increase-height' : 'h5'}`}>
+                But I must explain to you how all this mistaken idea of
+                denouncing pleasure and praising pain was born and I will give
+                you a complete account of the system, and expound the actual
+                teachings of the great explorer
+              </h5>
             </div>
           </div>
           <div>
-            <div className="about-printing-intro printing-intro">
-              <h3 className="h3">What we do for Printing Business</h3>
-              <FaMinus></FaMinus>
+            <div>
+              <div className="about-printing-intro printing-intro">
+                <h3 id="tab-5" className="h3" onClick={toggleActive}>
+                  What we do for Printing Business
+                </h3>
+                <div>
+                  {active === 5 ? <FaMinus></FaMinus> : <FaPlus></FaPlus>}
+                </div>
+              </div>
+              <h5 className={`h5 ${active === 5 ? 'increase-height' : 'h5'}`}>
+                But I must explain to you how all this mistaken idea of
+                denouncing pleasure and praising pain was born and I will give
+                you a complete account of the system, and expound the actual
+                teachings of the great explorer
+              </h5>
             </div>
-            <h5 className="h5">
-              But I must explain to you how all this mistaken idea of denouncing
-              pleasure and praising pain was born and I will give you a complete
-              account of the system, and expound the actual teachings of the
-              great explorer
-            </h5>
-            <div className="about-printing-intro printing-intro">
-              <h3 className="h3">What we do for Printing Business</h3>
-              <FaMinus></FaMinus>
+            <div>
+              <div className="about-printing-intro printing-intro">
+                <h3 id="tab-6" className="h3" onClick={toggleActive}>
+                  What we do for Printing Business
+                </h3>
+                <div>
+                  {active === 6 ? <FaMinus></FaMinus> : <FaPlus></FaPlus>}
+                </div>
+              </div>
+              <h5 className={`h5 ${active === 6 ? 'increase-height' : 'h5'}`}>
+                But I must explain to you how all this mistaken idea of
+                denouncing pleasure and praising pain was born and I will give
+                you a complete account of the system, and expound the actual
+                teachings of the great explorer
+              </h5>
             </div>
-            <div className="about-printing-intro printing-intro">
-              <h3 className="h3">What we do for Printing Business</h3>
-              <FaMinus></FaMinus>
+            <div>
+              <div className="about-printing-intro printing-intro">
+                <h3 id="tab-7" className="h3" onClick={toggleActive}>
+                  What we do for Printing Business
+                </h3>
+                <div>
+                  {active === 7 ? <FaMinus></FaMinus> : <FaPlus></FaPlus>}
+                </div>
+              </div>
+              <h5 className={`h5 ${active === 7 ? 'increase-height' : 'h5'}`}>
+                But I must explain to you how all this mistaken idea of
+                denouncing pleasure and praising pain was born and I will give
+                you a complete account of the system, and expound the actual
+                teachings of the great explorer
+              </h5>
             </div>
-            <div className="about-printing-intro printing-intro">
-              <h3 className="h3">What we do for Printing Business</h3>
-              <FaMinus></FaMinus>
+            <div>
+              <div className="about-printing-intro printing-intro">
+                <h3 id="tab-8" className="h3" onClick={toggleActive}>
+                  What we do for Printing Business
+                </h3>
+                <div>
+                  {active === 8 ? <FaMinus></FaMinus> : <FaPlus></FaPlus>}
+                </div>
+              </div>
+              <h5 className={`h5 ${active === 8 ? 'increase-height' : 'h5'}`}>
+                But I must explain to you how all this mistaken idea of
+                denouncing pleasure and praising pain was born and I will give
+                you a complete account of the system, and expound the actual
+                teachings of the great explorer
+              </h5>
             </div>
           </div>
         </div>
@@ -84,7 +185,9 @@ const Faq = () => {
                   <input type="email" placeholder="Enter Email Address" />
                 </div>
                 <textarea placeholder="Message"></textarea>
-                <button className="faq-section-btn service-btn">Send Message</button>
+                <button className="faq-section-btn service-btn">
+                  Send Message
+                </button>
               </form>
             </div>
           </div>
@@ -146,7 +249,7 @@ const Faq = () => {
       </div>
       <Footer />
     </>
-  );
-};
+  )
+}
 
-export default Loading(Faq);
+export default Loading(Faq)

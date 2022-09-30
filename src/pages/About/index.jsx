@@ -16,19 +16,6 @@ import Footer from '../../components/Footer'
 import Banner from '../../components/Banner'
 
 function About() {
-  window.addEventListener('click', showContent)
-
-  function showContent() {
-    const ref = useRef(null)
-    useEffect(() => {
-      console.log('className 👉️', ref.current.className)
-      if (ref.current.classList.contains('boxes')) {
-        console.log('Element contains class')
-      } else {
-        console.log('Element does NOT contain class')
-      }
-    }, [])
-  }
 
   return (
     <>
@@ -104,32 +91,6 @@ function About() {
               <div>
                 <h4 className="h4">Faq</h4>
                 <h2 className="h2">Frequently Asked Questions</h2>
-              </div>
-              <div>
-                <div className="printing-intro">
-                  <h3>What we do for printing</h3>
-                  <FaMinus></FaMinus>
-                </div>
-                <p className="h5">
-                  But I must explain to you how all this mistaken idea of
-                  denouncing pleasure and praising pain was born and I will give
-                  you a complete account of the system, and expound the actual
-                  teachings of the great explorer
-                </p>
-              </div>
-              <div>
-                <div className="printing-intro">
-                  <h3>What we do for printing</h3>
-                  <FaPlus></FaPlus>
-                </div>
-                <p></p>
-              </div>
-              <div>
-                <div className="printing-intro">
-                  <h3>What we do for printing</h3>
-                  <FaPlus></FaPlus>
-                </div>
-                <p></p>
               </div>
             </div>
           </div>
