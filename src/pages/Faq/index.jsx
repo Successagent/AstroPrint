@@ -12,10 +12,7 @@ import aboutImageFive from '../../assets/Images/img_01-2-768x680.jpg'
 import { FaPlus, FaMinus } from 'react-icons/fa'
 import AboutCard from '../../components/Card/AboutCard/AboutCard'
 
-
-
-const Faq = () => {
- 
+const Faq = ({ toggleActive, active }) => {
   return (
     <>
       <Header />

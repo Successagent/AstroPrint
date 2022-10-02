@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from 'react'
 import Header from '../../components/Header'
 import '../About/About.css'
+
 import Loading from '../../components/HOCs/Loading'
 import { FaMinus, FaPlus } from 'react-icons/fa'
 
@@ -14,9 +15,13 @@ import MemberCard from '../../components/Card/MemberCard'
 import ReviewsCard from '../../components/Card/ReviewsCard/ReviewsCard'
 import Footer from '../../components/Footer'
 import Banner from '../../components/Banner'
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 
-function About() {
-
+function About({ toggleActive, active }) {
+  useEffect(() => {
+    Aos.init({ duration: 2000 })
+  }, [])
   return (
     <>
       <Header />
@@ -26,7 +31,7 @@ function About() {
           <div>
             <img src={aboutImageOne} alt="" />
           </div>
-          <div>
+          <div data-aos="fade-up">
             <div className="boxes">
               <h4 className="h4">About Our Company</h4>
               <h1 className="h2">Printing Your Dream Works With Printem</h1>
@@ -87,10 +92,60 @@ function About() {
             <div>
               <img src={aboutImageFour} alt="" />
             </div>
-            <div>
+            <div data-aos="fade-up">
               <div>
                 <h4 className="h4">Faq</h4>
                 <h2 className="h2">Frequently Asked Questions</h2>
+              </div>
+              <div>
+                <div>
+                  <div className="about-printing-intro printing-intro">
+                    <h3 id="tab-1" className="h3" onClick={toggleActive}>
+                      What we do for Printing Business
+                    </h3>
+                    <div>
+                      {active === 0 ? (
+                        <FaMinus></FaMinus>
+                      ) : active === 1 ? (
+                        <FaMinus></FaMinus>
+                      ) : (
+                        <FaPlus></FaPlus>
+                      )}
+                    </div>
+                  </div>
+                  <h5
+                    className={`h5 ${
+                      active === 0
+                        ? 'increase-height'
+                        : active === 1
+                        ? 'increase-height'
+                        : 'h5'
+                    }`}
+                  >
+                    But I must explain to you how all this mistaken idea of
+                    denouncing pleasure and praising pain was born and I will
+                    give you a complete account of the system, and expound the
+                    actual teachings of the great explorer
+                  </h5>
+                </div>
+                <div>
+                  <div className="about-printing-intro printing-intro">
+                    <h3 id="tab-2" className="h3" onClick={toggleActive}>
+                      What we do for Printing Business
+                    </h3>
+                    <div>
+                      {active === 2 ? <FaMinus></FaMinus> : <FaPlus></FaPlus>}
+                    </div>
+                  </div>
+                  <h5
+                    className={`h5 ${active === 2 ? 'increase-height' : 'h5'}`}
+                  >
+                    But I must explain to you how all this mistaken idea of
+                    denouncing pleasure and praising pain was born and I will
+                    give you a complete account of the system, and expound the
+                    actual teachings of the great explorer
+                  </h5>
+                </div>
               </div>
             </div>
           </div>

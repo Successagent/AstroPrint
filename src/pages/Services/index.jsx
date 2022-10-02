@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect } from 'react'
 import Loading from '../../components/HOCs/Loading'
 
 import AboutCard from '../../components/Card/AboutCard/AboutCard'
@@ -23,10 +23,13 @@ import { Button, SmallButton } from '../../components/Button'
 import '../Services/Service.css'
 import '../About/About.css'
 import Banner from '../../components/Banner'
+import Aos from 'aos'
+import "aos/dist/aos.css"
 
 function Services() {
-  
-
+  useEffect(() => {
+    Aos.init({ duration: 2000 })
+  }, [])
   return (
     <>
       <Header />
@@ -36,7 +39,7 @@ function Services() {
           <div className="service-sec-one-item-one">
             <div className="">
               <h4 className="h4">Our Core Features</h4>
-              <h2 className="h2">Explore Every Features</h2>
+              <h2 data-aos="fade-up" className="h2">Explore Every Features</h2>
             </div>
             <h5 className="h5 ">
               Do Do Sed ut perspiciatis unde omnis iste natus error sit
@@ -130,7 +133,7 @@ function Services() {
           <div>
             <img src={serviceLogoOne} alt="" />
           </div>
-          <div className="service-section-three-part-two ">
+          <div data-aos="fade-up" className="service-section-three-part-two ">
             <h4 className="h4">Needs Any Helps</h4>
             <h2 className="h2">Always Ready To Print Your Dream Works</h2>
             <h5 className="h5">

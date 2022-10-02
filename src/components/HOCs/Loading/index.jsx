@@ -5,7 +5,7 @@ import OnImagesLoaded from "react-on-images-loaded";
 import LoadingStyles from "./Loading.module.css";
 
 function Loading(Page) {
-  const HOC = () => {
+  const HOC = (props) => {
     const [isLoading, setIsLoading] = useState(true);
     const { pathname } = useLocation();
 
@@ -35,7 +35,7 @@ function Loading(Page) {
           onTimeout={hideLoader}
           timeout={3000}
         >
-          <Page />
+          <Page {...props}/>
         </OnImagesLoaded>
       </>
     );
