@@ -32,6 +32,14 @@
   font-weight: 500;
 }
 
+.about-section-five-part-one h3 {
+  color: white;
+}
+
+.tab-content-con {
+  height: 350px;
+}
+
 .about-section-one {
   background-image: url(/src/assets/Images/bg_01-scaled.jpg);
   background-color: rgba(24, 32, 32, 0.2);
@@ -274,7 +282,7 @@ img {
 
 .about-section-five-part-one > div:nth-child(2) {
   background-color: var(--secondary-blue);
-  padding: 100px 40px;
+  padding: 50px 40px;
 }
 
 .about-section-five-part-two > div:nth-child(1) {

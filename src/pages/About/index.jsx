@@ -97,10 +97,10 @@ function About({ toggleActive, active }) {
                 <h4 className="h4">Faq</h4>
                 <h2 className="h2">Frequently Asked Questions</h2>
               </div>
-              <div>
+              <div className="tab-content-con">
                 <div>
                   <div className="about-printing-intro printing-intro">
-                    <h3 id="tab-1" className="h3" onClick={toggleActive}>
+                    <h3 id="tab-1" onClick={toggleActive}>
                       What we do for Printing Business
                     </h3>
                     <div>
@@ -130,7 +130,7 @@ function About({ toggleActive, active }) {
                 </div>
                 <div>
                   <div className="about-printing-intro printing-intro">
-                    <h3 id="tab-2" className="h3" onClick={toggleActive}>
+                    <h3 id="tab-2" onClick={toggleActive}>
                       What we do for Printing Business
                     </h3>
                     <div>
@@ -139,6 +139,24 @@ function About({ toggleActive, active }) {
                   </div>
                   <h5
                     className={`h5 ${active === 2 ? 'increase-height' : 'h5'}`}
+                  >
+                    But I must explain to you how all this mistaken idea of
+                    denouncing pleasure and praising pain was born and I will
+                    give you a complete account of the system, and expound the
+                    actual teachings of the great explorer
+                  </h5>
+                </div>
+                <div>
+                  <div className="about-printing-intro printing-intro">
+                    <h3 id="tab-3" onClick={toggleActive}>
+                      What we do for Printing Business
+                    </h3>
+                    <div>
+                      {active === 3 ? <FaMinus></FaMinus> : <FaPlus></FaPlus>}
+                    </div>
+                  </div>
+                  <h5
+                    className={`h5 ${active === 3 ? 'increase-height' : 'h5'}`}
                   >
                     But I must explain to you how all this mistaken idea of
                     denouncing pleasure and praising pain was born and I will
