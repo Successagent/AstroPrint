@@ -1,16 +1,17 @@
-import React from 'react'
+import React from "react";
 
-import Banner from '../../components/Banner'
-import Header from '../../components/Header'
-import Footer from '../../components/Footer'
+import Banner from "../../components/Banner";
+import Header from "../../components/Header";
+import Footer from "../../components/Footer";
 
-import Loading from '../../components/HOCs/Loading'
+import Loading from "../../components/HOCs/Loading";
 
-import { FaMapMarkedAlt } from 'react-icons/fa'
+import { FaMapMarkedAlt } from "react-icons/fa";
 
-import '../Contact/Contact.css'
-import '../About/About.css'
-import Map from '../../components/Map/Map'
+import "../Contact/Contact.css";
+import "../About/About.css";
+import Map from "../../components/Map/Map";
+import { AiFillPhone, AiOutlineMail } from "react-icons/ai";
 
 const Contact = () => {
   return (
@@ -25,26 +26,23 @@ const Contact = () => {
             </div>
             <h3 className="h3">Locations</h3>
             <p className="h5">
-              2055 Main Street,2nd Floor, E - Block, New York
+              Kare's Plaza by the Express, Green Villa Road, Biogbolo, Bayelsa
+              State
             </p>
           </div>
           <div>
             <div>
-              <FaMapMarkedAlt></FaMapMarkedAlt>
+              <AiFillPhone></AiFillPhone>
             </div>
-            <h3 className="h3">Locations</h3>
-            <p className="h5">
-              2055 Main Street,2nd Floor, E - Block, New York
-            </p>
+            <h3 className="h3">Phone</h3>
+            <p className="h5">+2347041620712</p>
           </div>
           <div>
             <div>
-              <FaMapMarkedAlt></FaMapMarkedAlt>
+              <AiOutlineMail></AiOutlineMail>
             </div>
-            <h3 className="h3">Locations</h3>
-            <p className="h5">
-              2055 Main Street,2nd Floor, E - Block, New York
-            </p>
+            <h3 className="h3">Email</h3>
+            <p className="h5">Support@astrosoft.io</p>
           </div>
         </div>
         <div className="contact-section-two">
@@ -61,14 +59,16 @@ const Contact = () => {
               <input type="email" placeholder="Write Your Email" />
             </div>
             <textarea placeholder="Write Your Message"></textarea>
-            <button className="faq-section-btn service-btn">Send Message</button>
+            <button className="faq-section-btn service-btn">
+              Send Message
+            </button>
           </form>
         </div>
         <div className="contact-section-three">{/* <Map /> */}</div>
       </div>
       <Footer />
     </>
-  )
-}
+  );
+};
 
-export default Loading(Contact)
+export default Loading(Contact);

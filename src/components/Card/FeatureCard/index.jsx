@@ -23,8 +23,6 @@ function FeatureCard({ title, body, target, bgColor }) {
       <div className={FeatureCardStyles.text}>
         <h3 className={FeatureCardStyles.title}>{title} </h3>
         <p className={FeatureCardStyles.body}>{body}</p>
-        {/* TODO: Make a link */}
-        <Link to={target}>Read More</Link>
       </div>
     </div>
   );

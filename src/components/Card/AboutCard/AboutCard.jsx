@@ -1,8 +1,8 @@
-import AboutCardLogoOne from '../../../assets/Images/img_01-3.jpg'
-import AboutCardLogoTwo from '../../../assets/Images/img_02-3.jpg'
-import AboutCardLogoThree from '../../../assets/Images/img_03-3.jpg'
-import { Button, SmallButton } from '../../Button'
-import { FiArrowRight } from 'react-icons/fi'
+import AboutCardLogoOne from "../../../assets/sublime.webp";
+import AboutCardLogoTwo from "../../../assets/monogramming.jpg";
+import AboutCardLogoThree from "../../../assets/Dtf.jpg";
+import { Button, SmallButton } from "../../Button";
+import { FiArrowRight } from "react-icons/fi";
 
 const AboutCard = () => {
   return (
@@ -12,13 +12,11 @@ const AboutCard = () => {
           <img src={AboutCardLogoOne} alt="" />
         </div>
         <div className="about-card-items">
-          <SmallButton>
-            <FiArrowRight />
-          </SmallButton>
-          <h3 className="h3">Company History</h3>
+          <h3 className="h3">Sublimation Machine</h3>
           <p className="h5">
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-            accusantium doloremque laudantium totam
+            AstroPrint uses their sublimation machine to create high-quality and
+            durable printed products. The process involves transferring designs
+            or images onto various materials using heat and pressure.
           </p>
         </div>
       </div>
@@ -27,11 +25,12 @@ const AboutCard = () => {
           <img src={AboutCardLogoTwo} alt="" />
         </div>
         <div className="about-card-items">
-          <SmallButton><FiArrowRight/></SmallButton>
-          <h3 className="h3">Exclusive Members</h3>
+          <h3 className="h3">Monogramming Machine</h3>
           <p className="h5">
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-            accusantium doloremque laudantium totam
+            AstroPrint uses their monogramming machine to add personalized
+            designs to a variety of products. The machine uses
+            computer-controlled embroidery to stitch custom designs onto items
+            such as shirts, hats, bags, and more.
           </p>
         </div>
       </div>
@@ -40,18 +39,18 @@ const AboutCard = () => {
           <img src={AboutCardLogoThree} alt="" />
         </div>
         <div className="about-card-items">
-          <SmallButton>
-            <FiArrowRight></FiArrowRight>
-          </SmallButton>
-          <h3 className="h3">Working Progress</h3>
+          <h3 className="h3">DTF Machine</h3>
           <p className="h5">
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-            accusantium doloremque laudantium totam
+            AstroPrint uses their DTF (Direct-to-Film) machine to produce
+            high-quality transfers for a variety of products, including
+            t-shirts, hats, bags, and more. The DTF machine uses a combination
+            of inkjet printing and heat transfer technology to create vibrant
+            and durable designs.
           </p>
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default AboutCard
+export default AboutCard;

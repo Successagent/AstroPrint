@@ -1,27 +1,23 @@
-import React, { useEffect, useRef } from 'react'
-import Header from '../../components/Header'
-import '../About/About.css'
+import React, { useEffect } from "react";
+import Header from "../../components/Header";
+import "../About/About.css";
 
-import Loading from '../../components/HOCs/Loading'
-import { FaMinus, FaPlus } from 'react-icons/fa'
+import Loading from "../../components/HOCs/Loading";
 
-import aboutImageOne from '../../assets/Images/img_01.png'
-import aboutImageTwo from '../../assets/Images/reward.png'
-import aboutImageThree from '../../assets/Images/iso.png'
-import aboutImageFour from '../../assets/Images/img_01-9.jpg'
-import aboutImageFive from '../../assets/Images/img_01-2-768x680.jpg'
-import AboutCard from '../../components/Card/AboutCard/AboutCard'
-import MemberCard from '../../components/Card/MemberCard'
-import ReviewsCard from '../../components/Card/ReviewsCard/ReviewsCard'
-import Footer from '../../components/Footer'
-import Banner from '../../components/Banner'
-import Aos from 'aos'
-import 'aos/dist/aos.css'
+import aboutImageOne from "../../assets/Images/img_01.png";
 
-function About({ toggleActive, active }) {
+import AboutCard from "../../components/Card/AboutCard/AboutCard";
+import MemberCard from "../../components/Card/MemberCard";
+import ReviewsCard from "../../components/Card/ReviewsCard/ReviewsCard";
+import Footer from "../../components/Footer";
+import Banner from "../../components/Banner";
+import Aos from "aos";
+import "aos/dist/aos.css";
+
+function About({}) {
   useEffect(() => {
-    Aos.init({ duration: 2000 })
-  }, [])
+    Aos.init({ duration: 2000 });
+  }, []);
   return (
     <>
       <Header />
@@ -37,38 +33,21 @@ function About({ toggleActive, active }) {
               <h1 className="h2">Printing Your Dream Works With Printem</h1>
             </div>
             <p className="p">
-              About Sed ut perspiciatis unde omnis iste natus error sit
-              voluptatem accu santium doloremque laudantium, totam rem aperiam,
-              eaque ipquae ab illo inventore veritatis et quasi architecto
-              beatae
+              Astroprint is a printing company that specializes in providing
+              solutions for 3D printing enthusiasts, professionals, and
+              businesses. The company was founded in 2022 with the mission of
+              making 3D printing accessible to everyone, regardless of their
+              technical background.
             </p>
             <h5 className="h5">
-              But I must explain to you how all this mistaken idea of denouncing
-              pleasure and praising pain was born and I will give you a complete
-              account of the system and expound the actual teachings of the
-              great explorer of the truth, the master-build human happiness. No
-              one rejects, dislikes, or avoids pleasure
+              Astroprint is a comprehensive printing company under AstroSoft
+              Group that simplifies the entire printing process. Its remote
+              monitoring, slicing, file management, compatibility, and ease of
+              use features make it a valuable tool for both novice and
+              experienced printing enthusiasts. With Astroprint, you can take
+              your printing projects to the next level, making it easier than
+              ever to bring your ideas to life.
             </h5>
-            <div className="about-part-two-footer">
-              <div>
-                <img src={aboutImageTwo} alt="" />
-                <div>
-                  <h3 className="h3">ISO Certified</h3>
-                  <h5 className="h5">
-                    ISO Certified Denouncing pleasure and praising pain was born
-                  </h5>
-                </div>
-              </div>
-              <div>
-                <img src={aboutImageThree} alt="" />
-                <div>
-                  <h3 className="h3">Award Wins</h3>
-                  <h5 className="h5">
-                    Denouncing pleasure and praising pain was bor
-                  </h5>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
         <div className="about-section-three">
@@ -87,7 +66,7 @@ function About({ toggleActive, active }) {
             <MemberCard />
           </div>
         </div>
-        <div className="about-section-five">
+        {/* <div className="about-section-five">
           <div className="about-section-five-part-one">
             <div>
               <img src={aboutImageFour} alt="" />
@@ -212,7 +191,7 @@ function About({ toggleActive, active }) {
               <img src={aboutImageFive} alt="" />
             </div>
           </div>
-        </div>
+        </div> */}
         <div className="about-section-six">
           <h4 className="h4">Clients Reviews</h4>
           <div>
@@ -223,7 +202,7 @@ function About({ toggleActive, active }) {
       </div>
       <Footer></Footer>
     </>
-  )
+  );
 }
 
-export default Loading(About)
+export default Loading(About);
