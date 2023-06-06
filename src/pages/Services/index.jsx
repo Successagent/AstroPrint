@@ -7,23 +7,17 @@ import Footer from "../../components/Footer/Footer";
 import Header from "../../components/Header";
 import serviceLogoOne from "../../assets/Images/img_02-3.png";
 
-import { FaCube, FaLaptopCode } from "react-icons/fa";
-import {
-  FiArrowRight,
-  FiCheck,
-  FiPrinter,
-  FiSettings,
-  FiHeart,
-  FiTruck,
-} from "react-icons/fi";
+import { FiArrowRight } from "react-icons/fi";
 
 import "../Services/Service.css";
 import "../About/About.css";
 import Banner from "../../components/Banner";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import { useNavigate } from "react-router-dom";
 
 function Services() {
+  const navigate = useNavigate();
   useEffect(() => {
     Aos.init({ duration: 2000 });
   }, []);
@@ -44,7 +38,7 @@ function Services() {
               AstroPrint gives you the best of the best for any of your
               printing.
             </h5>
-            <button className="service-btn ">
+            <button onClick={() => navigate("/faq")} className="service-btn ">
               DISCOVER MORE
               <div className="section-icon">
                 <FiArrowRight></FiArrowRight>

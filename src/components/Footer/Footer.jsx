@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import {
-  FaCalendar,
+  FaPinterestP,
   FaPhone,
   FaFacebookF,
   FaTwitter,
@@ -11,15 +11,7 @@ import {
 
 import { FiArrowRight } from "react-icons/fi";
 import "../../pages/About/About.css";
-import { Button, SmallButton } from "../Button";
-
-import footerLogoOne from "../../assets/Images/logo-black.png";
-import footerLogoTwo from "../../assets/Images/img_05.png";
-import footerLogoThree from "../../assets/Images/img_07.png";
-import footerLogoFour from "../../assets/Images/img_08.png";
-import footerLogoFive from "../../assets/Images/img_05.png";
-import footerLogoSix from "../../assets/Images/img_03-150.jpg";
-import footerLogoSeven from "../../assets/Images/img_02-150.jpg";
+import { SmallButton } from "../Button";
 
 const Footer = () => {
   return (
@@ -67,16 +59,30 @@ const Footer = () => {
         <p className="p">Copyright ©2022 Astrosoft. All Rights Reserved</p>
         <div className="footer-last-item-child-two">
           <div>
-            <FaFacebookF></FaFacebookF>
+            <a
+              target="_blank"
+              href="https://www.facebook.com/astrosoftng?mibextid=ZbWKwL"
+            >
+              <FaFacebookF></FaFacebookF>
+            </a>
           </div>
           <div>
-            <FaTwitter></FaTwitter>
+            <a target="_blank" href="https://twitter.com/Astrosoftio?s=20">
+              <FaTwitter></FaTwitter>
+            </a>
           </div>
           <div>
-            <FaLinkedinIn></FaLinkedinIn>
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/company/astrosoftng/mycompany/"
+            >
+              <FaLinkedinIn></FaLinkedinIn>
+            </a>
           </div>
           <div>
-            <FaInstagram></FaInstagram>
+            <a target="_blank" href="https://www.instagram.com/astroprints.io/">
+              <FaInstagram></FaInstagram>
+            </a>
           </div>
         </div>
       </div>

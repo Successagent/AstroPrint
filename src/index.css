@@ -83,6 +83,13 @@ button {
 
 .footer a {
   color: white !important;
+
+}
+
+.footer-last-item-child-two a {
+  display: flex;
+  align-items: center;
+  justify-content: center
 }
 
 .footer-item-one {
@@ -191,6 +198,8 @@ button {
   border: none;
   height: 50px;
   width: 100%;
+  outline: none;
+  padding-left: 15px;
 }
 
 .footer-form input::placeholder {

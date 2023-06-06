@@ -32,8 +32,9 @@ const HeaderContent = ({ setIsSideMenuOpen }) => {
       </ul>
 
       <div className={HeaderStyles.buttonSet}>
-        <SmallButton width={"50px"}>Q</SmallButton>
-        <Button>Get A Quote</Button>
+        <Link to={"/about"}>
+          <Button>About Us</Button>
+        </Link>
       </div>
       <button
         className={HeaderStyles.menuBtn}

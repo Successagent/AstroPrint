@@ -64,7 +64,9 @@ const Contact = () => {
             </button>
           </form>
         </div>
-        <div className="contact-section-three">{/* <Map /> */}</div>
+        <div className="contact-section-three">
+          <Map />
+        </div>
       </div>
       <Footer />
     </>
