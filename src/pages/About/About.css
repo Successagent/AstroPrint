@@ -131,6 +131,8 @@ img {
   padding: 30px 0;
 }
 
+
+
 .about-card,
 .member-card,
 .review-card {
@@ -154,23 +156,20 @@ img {
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
+.about-card {
+  gap: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
 .about-card>div div:nth-child(2) {
-  background-image: url(../../assets/Images/bg_icon.png);
-  background-color: rgba(255, 255, 255, 0.97);
-  background-blend-mode: color;
-  background-repeat: no-repeat;
-  background-position: center center;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 10px;
   padding: 35px;
-  width: 90%;
-  margin: -50px;
-  margin-left: 15px;
-  z-index: 2;
-  position: relative;
+
 }
 
 .about-card-items button {
