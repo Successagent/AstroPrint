@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import Header from "../../components/Header";
+
 import "../About/About.css";
 
 import Loading from "../../components/HOCs/Loading";
@@ -9,7 +9,8 @@ import aboutImageOne from "../../assets/Images/img_01.png";
 import AboutCard from "../../components/Card/AboutCard/AboutCard";
 import MemberCard from "../../components/Card/MemberCard";
 import ReviewsCard from "../../components/Card/ReviewsCard/ReviewsCard";
-import Footer from "../../components/Footer";
+import Footer from "../../components/Footer/Footer";
+import Header from "../../components/Header/Header";
 import Banner from "../../components/Banner";
 import Aos from "aos";
 import "aos/dist/aos.css";

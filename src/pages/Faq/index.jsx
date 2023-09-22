@@ -1,13 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 import Banner from "../../components/Banner";
 import Footer from "../../components/Footer/Footer";
-import Header from "../../components/Header";
+import Header from "../../components/Header/Header";
 
 import Loading from "../../components/HOCs/Loading";
 
 import "../Faq/Faq.css";
-import aboutImageFour from "../../assets/Images/img_01-9.jpg";
-import aboutImageFive from "../../assets/Images/img_01-2-768x680.jpg";
 
 import { FaPlus, FaMinus } from "react-icons/fa";
 import AboutCard from "../../components/Card/AboutCard/AboutCard";

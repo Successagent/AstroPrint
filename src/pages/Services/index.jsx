@@ -4,7 +4,7 @@ import Loading from "../../components/HOCs/Loading";
 import AboutCard from "../../components/Card/AboutCard/AboutCard";
 import ReviewsCard from "../../components/Card/ReviewsCard/ReviewsCard";
 import Footer from "../../components/Footer/Footer";
-import Header from "../../components/Header";
+import Header from "../../components/Header/Header";
 import serviceLogoOne from "../../assets/Images/img_02-3.png";
 
 import { FiArrowRight } from "react-icons/fi";
